@@ -1,6 +1,20 @@
-<mat-sidenav-container class="example-sidenav-fab-container" style="height:10000px;">
+<mat-sidenav-container class="example-sidenav-fab-container" style="height:10000px; left:0;">
     <mat-sidenav #sidenav mode="side" opened="true">
-      <mat-expansion-panel>
+        <mat-list>
+            <mat-list-item>Originals</mat-list-item>
+            <mat-list-item>Studios</mat-list-item>
+            <mat-list-item>Re-imaginations</mat-list-item>
+            <mat-list-item>Trending</mat-list-item>
+            <mat-list-item>Masterworks</mat-list-item>
+            <mat-list-item>Shop</mat-list-item>
+            <mat-list-item>History</mat-list-item>
+            <mat-list-item>Liked</mat-list-item>
+            <mat-list-item>Following</mat-list-item>
+          </mat-list>
+
+
+
+      <!-- <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
             Originals
@@ -46,7 +60,7 @@
             Following
           </mat-panel-title>
         </mat-expansion-panel-header>
-    </mat-expansion-panel>
+    </mat-expansion-panel> -->
     </mat-sidenav>
     <button mat-mini-fab class="example-fab" (click)="sidenav.toggle()">
       <mat-icon>add</mat-icon>

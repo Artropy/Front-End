@@ -8,11 +8,57 @@
     </h3>
   </button>
   <form class="example-form flexContainer">
-      <input id='artropySearch' placeholder="Search" value="">
+
+    <div class="input-group-sm" style="width:100%;">
+      <!-- <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Go!</button>
+        </span> -->
+        <input id='artropySearch' placeholder="Search" type="text" class="form-control" aria-label="Search">
+    </div>
+
+
+
   </form>
   <span class="example-spacer"></span>
   <button mat-button class="button-login" routerLink="/sign-up" routerLinkActive="active">LOG IN</button>
-  <button mat-button class="">
-    Options
-  </button>
+  <button mat-button class="">...</button>
 </mat-toolbar>
+<div class='spacer'></div>
+<mat-sidenav-container class="example-sidenav-fab-container" style="height:10000px; left:0;">
+  <mat-sidenav #sidenav mode="side" opened="true">
+    <mat-list>
+      <mat-list-item>
+        <button routerLink="/home" routerLinkActive="active" mat-button class="">Originals</button>
+      </mat-list-item>
+      <mat-list-item>        
+        <button routerLink="/home" routerLinkActive="active" mat-button class="">Studios</button></mat-list-item>
+      <mat-list-item>        
+        <button routerLink="/home" routerLinkActive="active" mat-button class="">Re-imaginations</button></mat-list-item>
+      <mat-list-item>        <button routerLink="/home" routerLinkActive="active" mat-button class="">Trending</button></mat-list-item>
+      <mat-list-item>        <button routerLink="/home" routerLinkActive="active" mat-button class="">Masterworks</button></mat-list-item>
+      <mat-list-item>        <button routerLink="/home" routerLinkActive="active" mat-button class="">Shop</button></mat-list-item>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            History
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Liked
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Following
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+    </mat-list>
+  </mat-sidenav>
+
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-sidenav-container>
