@@ -28,6 +28,11 @@ button {
   margin: 5px;
 }
 
+.logo{
+  color:white;
+  margin: 5px;
+}
+
 .mat-toolbar{
   background-color:  #660033;
   overflow: hidden;
@@ -47,6 +52,32 @@ md-toolbar {
 
 .spacer
 {
-    width: 100%;
+    width: 30%;
     height: 45px;
+}
+
+.flexContainer {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+}
+.flexItemOne {
+  flex-grow: 1;
+  align-self: flex-start;
+  margin: auto;
+  width:100%;
+}
+
+.flexItemTwo {
+  flex-grow: 2;
+  align-self: auto;
+  margin: auto;
+  width:1000px;
+}
+
+.flexItemThree {
+  flex-grow: 1;
+  align-self: flex-end;
+  margin: auto;
+  width:100%;
 }

@@ -31,11 +31,30 @@ import { MatSidenavModule } from '@angular/material';
 
 
 import { AppComponent } from './app.component';
-
+import { OriginalsPageComponent } from './originals-page/originals-page.component';
+import { StudiosPageComponent } from './studios-page/studios-page.component';
+import { TrendingPageComponent } from './trending-page/trending-page.component';
+import { MasterworksPageComponent } from './masterworks-page/masterworks-page.component';
+import { ShopPageComponent } from './shop-page/shop-page.component';
+import { LikedPageComponent } from './liked-page/liked-page.component';
+import { HistoryPageComponent } from './history-page/history-page.component';
+import { FollowingPageComponent } from './following-page/following-page.component';
+import { ReimaginationsPageComponent } from './reimaginations-page/reimaginations-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 const appRoutes: Routes = [
   { path: 'home', component: ArtropyHomePageComponent },
+  { path: 'originals', component: OriginalsPageComponent },
+  { path: 'studios', component: StudiosPageComponent },
+  { path: 'trending', component: TrendingPageComponent },
+  { path: 'masterworks', component: MasterworksPageComponent },
+  { path: 'shop', component: ShopPageComponent },
+  { path: 'liked', component: LikedPageComponent },
+  { path: 'history', component: HistoryPageComponent },
+  { path: 'following', component: FollowingPageComponent },
+  { path: 'reimaginations', component: ReimaginationsPageComponent },
+  { path: 'login', component: LoginPageComponent },
   // { path: 'Studios', component: ArtropyHomePageComponent },
   // { path: 'Reimaginations', component: ArtropyReimaginationsComponent },
   // { path: 'Trending', component: ArtropyHomePageComponent },
@@ -55,7 +74,17 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ArtropyTopNavComponent,
-    ArtropyHomePageComponent
+    ArtropyHomePageComponent,
+    OriginalsPageComponent,
+    StudiosPageComponent,
+    TrendingPageComponent,
+    MasterworksPageComponent,
+    ShopPageComponent,
+    LikedPageComponent,
+    HistoryPageComponent,
+    FollowingPageComponent,
+    ReimaginationsPageComponent,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,
