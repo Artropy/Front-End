@@ -16,6 +16,8 @@ import {MatExpansionModule} from '@angular/material';
 import {MatListModule} from '@angular/material';
 import {MatCardModule} from '@angular/material';
 import {MatGridListModule} from '@angular/material';
+import {MatTabsModule} from '@angular/material';
+
 
 
 
@@ -104,7 +106,8 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     ),
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTabsModule
 
   ],
   providers: [],
