@@ -1,17 +1,15 @@
 <mat-toolbar class="mat-toolbar">
   <div class='flexContainer'>
     <div class='flexItemOne'>
-      <button mat-button (click)="sidenav.toggle()" id=menu_example class=btn-menu aria-pressed="false">
-        <svg viewBox="0 0 10 10" class="svg-7">
-          <path d="M2,5 S2,-2 4,5 S7,8 8,4" />
-        </svg>
+      <button mat-button (click)="sidenav.toggle()" id=menu_example class="btn-menu" aria-pressed="false">
+          <img src='../../assets/images/hamburger.svg' style='color:white;'>
       </button>
       <button class='logo' mat-button routerLink="/home" routerLinkActive="active">
-          <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
-            <path fill="#FFF" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z"
-            />
-          </svg>
-          Artropy
+        <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
+          <path fill="#FFF" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z"
+          />
+        </svg>
+        Artropy
       </button>
     </div>
     <div class='flexItemTwo'>
@@ -20,20 +18,20 @@
           <!-- <span class="input-group-btn">
           <button class="btn btn-secondary" type="button">Go!</button>
         </span> -->
-          <input id='artropySearch' style="width:100%;" placeholder="Search" type="text" class="form-control" aria-label="Search">
+          <input id='artropySearch' style="width:100%;" placeholder="Search..." type="text" class="form-control" aria-label="Search">
         </div>
       </form>
     </div>
     <div class='flexItemThree'>
       <button mat-button class="button-login" routerLink="/login" routerLinkActive="active">LOG IN</button>
       <button mat-button class="button-login" routerLink="/cart" routerLinkActive="active">Cart</button>
-      <button mat-button class="">...</button>
+      <button mat-button class="" (click)="sidenavright.toggle()" >...</button>
     </div>
   </div>
 </mat-toolbar>
 <div class='spacer'></div>
-<mat-sidenav-container class="example-sidenav-fab-container" style="height:10000px; left:0;">
-  <mat-sidenav #sidenav mode="side" opened="true">
+<mat-sidenav-container class="example-sidenav-fab-container leftNavigation" style="height:1000px; left:0;">
+  <mat-sidenav #sidenav mode="side" opened="true" >
     <mat-list>
       <mat-list-item>
         <button routerLink="/originals" routerLinkActive="active" mat-button class="">Originals</button>
@@ -62,8 +60,45 @@
       <mat-list-item>
         <button routerLink="/following" routerLinkActive="active" mat-button class="">Following</button>
       </mat-list-item>
+      <mat-list-item>
+        <button routerLink="/events" routerLinkActive="active" mat-button class="">Events</button>
+      </mat-list-item>
+      <mat-list-item>
+          <button routerLink="/Sponsers" routerLinkActive="active" mat-button class="">Sponsers</button>
+        </mat-list-item>
     </mat-list>
   </mat-sidenav>
+  <mat-sidenav-container class="example-sidenav-fab-container rightOptions" style="height:1000px; left:0;">
+      <mat-sidenav align="end" #sidenavright mode="side" opened="false">
+        <mat-list>
+          <mat-list-item>
+            <button routerLink="/socialMedia" routerLinkActive="active" mat-button class="">Social Media</button>
+          </mat-list-item>
+          <mat-list-item>
+            <button routerLink="/Portfolio" routerLinkActive="active" mat-button class="">Portfolio</button>
+          </mat-list-item>
+          <mat-list-item>
+            <button routerLink="/notifications" routerLinkActive="active" mat-button class="">Notifications</button>
+          </mat-list-item>
+          <mat-list-item>
+            <button routerLink="/upload" routerLinkActive="active" mat-button class="">Upload</button>
+          </mat-list-item>
+          <mat-list-item>
+            <button routerLink="/transactionHistory" routerLinkActive="active" mat-button class="">Transaction History</button>
+          </mat-list-item>
+          <mat-list-item>
+            <button routerLink="/settings" routerLinkActive="active" mat-button class="">Settings</button>
+          </mat-list-item>
+          <mat-list-item>
+            <button routerLink="/copyRightArtWork" routerLinkActive="active" mat-button class="">Copyright Artwork</button>
+          </mat-list-item>
+          <mat-list-item>
+            <button routerLink="/supportTickets" routerLinkActive="active" mat-button class="">Support Tickets</button>
+          </mat-list-item>
+        </mat-list>
+      </mat-sidenav>
+
+
   <div class="container-fluid">
     <router-outlet></router-outlet>
   </div>
