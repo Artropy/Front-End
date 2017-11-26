@@ -37,6 +37,8 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { SponsersPageComponent } from './sponsers-page/sponsers-page.component';
 import { FollowedPageComponent } from './followed-page/followed-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
+import { VideosPageComponent } from './videos-page/videos-page.component';
+import { LivePageComponent } from './live-page/live-page.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: ArtropyHomePageComponent },
@@ -75,6 +77,8 @@ const appRoutes: Routes = [
     SponsersPageComponent,
     FollowedPageComponent,
     SearchPageComponent,
+    VideosPageComponent,
+    LivePageComponent,
   ],
   imports: [
     BrowserModule,

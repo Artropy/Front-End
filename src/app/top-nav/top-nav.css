@@ -52,10 +52,16 @@ md-toolbar {
 
 .spacer
 {
-    width: 30%;
-    height: 45px;
+  flex: 1 1 auto;
 }
 
+
+.headerBodyBreak{
+
+  width: 30%;
+  height: 45px;
+
+}
 .flexContainer {
   display: flex; 
   flex-direction: row;
@@ -100,4 +106,18 @@ background-color:white;
 
 .container-fluid {
   background-color:white;
+  }
+
+  .mat-toolbar > button{
+    background-color: #660033;
+  }
+
+  .mat-toolbar > button .loginButton{
+    background-color:#8a0044;
+  }
+
+  .searchBox {
+    flex-grow: 3;
+    flex-basis: 1000px;
+    flex-shrink: inherit;
   }

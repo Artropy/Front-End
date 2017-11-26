@@ -11,6 +11,9 @@ export class StudiosPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
+    $('.carousel').carousel();
+    
   }
 
 }
