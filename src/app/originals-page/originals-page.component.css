@@ -8,11 +8,12 @@ img{
 
     height:auto;
     width:100%;
+    overflow:auto;    
     /* min-height:100%; */
 }
 
 .example-card{
-    /* height:350px */
+    height:100%;
 }
 
 .mat-card{

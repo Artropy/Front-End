@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 // Angular Material Imports
 import { MatToolbarModule } from '@angular/material';
@@ -39,8 +40,11 @@ import { FollowedPageComponent } from './followed-page/followed-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { VideosPageComponent } from './videos-page/videos-page.component';
 import { LivePageComponent } from './live-page/live-page.component';
+import { ImagePageComponent } from './image-page/image-page.component';
+import { Http404PageComponent } from './http404-page/http404-page.component';
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: ArtropyHomePageComponent },
   { path: 'originals', component: OriginalsPageComponent },
   { path: 'studios', component: StudiosPageComponent },
@@ -56,6 +60,8 @@ const appRoutes: Routes = [
   { path: 'sponsers', component: SponsersPageComponent },
   { path: 'followed', component: FollowedPageComponent },
   { path: 'search', component: SearchPageComponent },
+  { path: 'image/:artist/:imageName', component: ImagePageComponent },
+  { path: '**', component: Http404PageComponent },
 ];
 
 @NgModule({
@@ -79,6 +85,8 @@ const appRoutes: Routes = [
     SearchPageComponent,
     VideosPageComponent,
     LivePageComponent,
+    ImagePageComponent,
+    Http404PageComponent,
   ],
   imports: [
     BrowserModule,
@@ -103,6 +111,7 @@ const appRoutes: Routes = [
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

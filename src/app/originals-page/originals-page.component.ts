@@ -11,6 +11,8 @@ export class OriginalsPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+   // this.getOriginals();
   }
+
 
 }
