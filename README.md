@@ -1,3 +1,9 @@
+# GitLab
+
+This project is also located with continious integration tools and build pipelines:
+https://gitlab.com/Yuifa/Artropy.git
+https://artropy.visualstudio.com/Artropy
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
