@@ -11,6 +11,8 @@ export class ImagePageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
   }
 
 }

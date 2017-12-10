@@ -42,6 +42,19 @@ import { VideosPageComponent } from './videos-page/videos-page.component';
 import { LivePageComponent } from './live-page/live-page.component';
 import { ImagePageComponent } from './image-page/image-page.component';
 import { Http404PageComponent } from './http404-page/http404-page.component';
+import { UploadPageComponent } from './upload-page/upload-page.component';
+
+// Other libraries
+
+// JQuery
+import * as jquery from 'jquery';
+// BOOTSTRAP4
+import * as bootstrap from 'bootstrap';
+// DROPZONE
+import * as dropzone from 'dropzone';
+
+
+
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -60,6 +73,7 @@ const appRoutes: Routes = [
   { path: 'sponsers', component: SponsersPageComponent },
   { path: 'followed', component: FollowedPageComponent },
   { path: 'search', component: SearchPageComponent },
+  { path: 'upload', component: UploadPageComponent },
   { path: 'image/:artist/:imageName', component: ImagePageComponent },
   { path: '**', component: Http404PageComponent },
 ];
@@ -87,6 +101,7 @@ const appRoutes: Routes = [
     LivePageComponent,
     ImagePageComponent,
     Http404PageComponent,
+    UploadPageComponent,
   ],
   imports: [
     BrowserModule,

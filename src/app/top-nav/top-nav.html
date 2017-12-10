@@ -1,38 +1,38 @@
 <mat-toolbar class="mat-toolbar">
-  <button mat-button (click)="sidenav.toggle()" id=menu_example class="btn-menu" aria-pressed="false">
-    <img src='../../assets/images/hamburger.svg' style='color:white;width:24px;height:24px;'>
+  <button mat-mini-fab (click)="sidenav.toggle()" id=menu_example aria-pressed="false">
+    <img src='/assets/svg-material-icons/if_menu-alt_134216.svg' style='color:white;width:24px;height:24px;'>
   </button>
+
   <button class='logo' mat-button routerLink="/home" routerLinkActive="active">
     <!-- <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
       <path fill="#FFF" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z"
       />
     </svg> -->
 
-      <img src='../../assets/images/logoDraftOne.svg'  style="width:24px;height:24px;" >
-
-
-   Artropy
+    <img src='../../assets/images/logoDraftOne.svg' style="width:24px;height:24px;"> Artropy
   </button>
   <!-- <div class='spacer'></div> -->
   <div class='spacer' style='margin:auto;'>
-      <form class="example-form">
-          <div class="input-group-sm" style="width:100%;">
-            <input id='artropySearch' style="width:100%;" placeholder="Search..." type="search" class="form-control mr-sm-2" aria-label="Search">
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div role="separator" class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
-          </div>
-          </form>
+    <form class="example-form">
+      <div class="input-group-sm" style="width:100%;">
+        <input id='artropySearch' style="width:100%;" placeholder="Search..." type="search" class="form-control mr-sm-2" aria-label="Search">
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+    </form>
   </div>
 
-    <div class='spacer'></div>
+  <div class='spacer'></div>
   <button mat-button class="button-login" routerLink="/login" routerLinkActive="active" class="loginButton">LOG IN</button>
   <button mat-button class="button-login" routerLink="/cart" routerLinkActive="active">Cart</button>
-  <button mat-button class="" (click)="sidenavright.toggle()">...</button>
+  <button mat-mini-fab (click)="sidenavright.toggle()" id=menu_example aria-pressed="false">
+    <img src='/assets/svg-material-icons/ic_more_horiz_black_24px.svg' style='color:white;width:24px;height:24px;'>
+  </button>
 </mat-toolbar>
 <div class='headerBodyBreak'></div>
 <mat-sidenav-container class="example-sidenav-fab-container leftNavigation" style="height:1000px; left:0;">
@@ -40,6 +40,7 @@
     <mat-list>
       <mat-list-item>
         <button routerLink="/originals" routerLinkActive="active" mat-button class="">Originals</button>
+        <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'>
       </mat-list-item>
       <mat-list-item>
         <button routerLink="/studios" routerLinkActive="active" mat-button class="">Studios</button>
@@ -108,8 +109,7 @@
         </mat-list-item>
       </mat-list>
     </mat-sidenav>
-
-
+    <br>
     <div class='container-fluid'>
       <router-outlet></router-outlet>
     </div>

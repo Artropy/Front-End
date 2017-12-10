@@ -15,4 +15,6 @@ export class OriginalsPageComponent implements OnInit {
   }
 
 
+    // NOTE: One Click tooltip note
+
 }
