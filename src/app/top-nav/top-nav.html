@@ -29,7 +29,9 @@
 
   <div class='spacer'></div>
   <button mat-button class="button-login" routerLink="/login" routerLinkActive="active" class="loginButton">LOG IN</button>
-  <button mat-button class="button-login" routerLink="/cart" routerLinkActive="active">Cart</button>
+  <button mat-mini-fab aria-pressed="false">
+      <img src='/assets/svg-material-icons/ic_shopping_cart_white_24px.svg'>
+  </button>
   <button mat-mini-fab (click)="sidenavright.toggle()" id=menu_example aria-pressed="false">
     <img src='/assets/svg-material-icons/ic_more_horiz_black_24px.svg' style='color:white;width:24px;height:24px;'>
   </button>
@@ -39,8 +41,8 @@
   <mat-sidenav #sidenav mode="side" opened="true">
     <mat-list>
       <mat-list-item>
-        <button routerLink="/originals" routerLinkActive="active" mat-button class="">Originals</button>
-        <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'>
+        <button routerLink="/originals" routerLinkActive="active" mat-button class="">Originals    <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'> </button>
+     
       </mat-list-item>
       <mat-list-item>
         <button routerLink="/studios" routerLinkActive="active" mat-button class="">Studios</button>
