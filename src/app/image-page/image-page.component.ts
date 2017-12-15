@@ -12,7 +12,6 @@ export class ImagePageComponent implements OnInit {
 
   ngOnInit() {
 
-
   }
 
 }

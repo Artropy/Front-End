@@ -12,7 +12,7 @@ h3 {
 
 button {
   color:white;
-  background-color:  #82124B;
+  background-color:  #F16286;
 }
 
 .example-button-row {
@@ -34,7 +34,7 @@ button {
 }
 
 .mat-toolbar{
-  background-color:  #660033;
+  background-color:  #0ACBCB;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -109,7 +109,7 @@ background-color:white;
   }
 
   .mat-toolbar > button{
-    background-color: #660033;
+    background-color: #0ACBCB;
   }
 
   .mat-toolbar > button .loginButton{
@@ -120,4 +120,9 @@ background-color:white;
     flex-grow: 3;
     flex-basis: 1000px;
     flex-shrink: inherit;
+  }
+
+  .rightOptions > img {
+    float:left;
+
   }

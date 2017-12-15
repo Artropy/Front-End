@@ -19,6 +19,10 @@ import { MatCardModule } from '@angular/material';
 import { MatGridListModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material';
+import { MatChipsModule } from '@angular/material';
+import { MatTooltipModule } from '@angular/material';
+
+
 
 // Artropy custom components
 import { AppComponent } from './app.component';
@@ -52,6 +56,7 @@ import * as jquery from 'jquery';
 import * as bootstrap from 'bootstrap';
 // DROPZONE
 import * as dropzone from 'dropzone';
+import { OriginalsService } from './originals.service';
 
 
 
@@ -122,11 +127,13 @@ const appRoutes: Routes = [
     ),
     MatCardModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    MatChipsModule,
+    MatTooltipModule
 
   ],
-  providers: [],
+  providers: [OriginalsService],
   bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
