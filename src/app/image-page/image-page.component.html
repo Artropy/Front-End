@@ -1,6 +1,10 @@
 <div class='row'>
     <mat-toolbar class='col-md-12'>
         <mat-toolbar-row>
+                <h1 class=''>Rain </h1><span>Ruby</span>
+                <span class="example-spacer"></span>
+                <span class="example-spacer">Ad./ Sponser Place Holder.</span>
+                <span class="example-spacer"></span>
             <div class="button-row">
                 <button mat-icon-button aria-pressed="false">
                     <img src='/assets/svg-material-icons/ic_add_shopping_cart_black_24px.svg'>
@@ -14,24 +18,25 @@
                 <button mat-icon-button aria-pressed="false">
                     <img src='/assets/svg-material-icons/ic_share_black_24px.svg'>
                 </button>
-                <button mat-icon-button aria-pressed="false">
+                <button mat-icon-button aria-pressed="false" (click)="openArtSnackBar()">
                     <img src='/assets/svg-material-icons/ic_star_border_black_24px.svg'>
                 </button>
                 <button mat-icon-button aria-pressed="false">
                     <img src='/assets/svg-material-icons/ic_zoom_out_map_black_24px.svg'>
                 </button>
             </div>
-            <span class="example-spacer"></span>
-            <h1 class=''>Rain</h1>
         </mat-toolbar-row>
         <mat-toolbar-row>
-            <span class="example-spacer"></span>
             <mat-chip-list>
+                <mat-chip color="accent" selected="true" class='image-ratio'  bottom="position">1,000,000 Views</mat-chip>
                 <mat-chip color="accent" selected="true" class='image-ratio' matTooltip="Image Ratio" bottom="position">16:9</mat-chip>
                 <mat-chip color="primary" selected="true" class='image-resolution' matTooltip="Original Image Resolution" bottom="position">1920X1080</mat-chip>
             </mat-chip-list>
+            <span class="example-spacer"></span>
         </mat-toolbar-row>
     </mat-toolbar>
+    <br><br>
+    <hr>
 </div>
 <div class='row'>
     <div class='col-sm-6'>
@@ -51,7 +56,7 @@
         </mat-form-field>
         <div class="comment-button-row">
             <button mat-raised-button>Cancel</button>
-            <button mat-raised-button color="primary">Post</button>
+            <button mat-raised-button color="primary" class='btn btn-sm'>Post</button>
         </div>
     </div>
 </div>

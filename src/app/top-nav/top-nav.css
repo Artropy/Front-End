@@ -48,6 +48,8 @@ md-toolbar {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
+button:focus {outline:0;}
+
 
 
 .spacer
@@ -125,4 +127,14 @@ background-color:white;
   .rightOptions > img {
     float:left;
 
+  }
+
+  .sidenav{
+
+    background-color: #F16286;
+  }
+
+  button > img {
+    float:right;
+    vertical-align:middle;
   }

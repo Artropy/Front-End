@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtropyRestAPI", "ArtropyRestAPI\ArtropyRestAPI.csproj", "{413DD578-D8AC-4923-BC9D-18B9A2E70D15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{413DD578-D8AC-4923-BC9D-18B9A2E70D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413DD578-D8AC-4923-BC9D-18B9A2E70D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413DD578-D8AC-4923-BC9D-18B9A2E70D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413DD578-D8AC-4923-BC9D-18B9A2E70D15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E569ED1-0E3A-402A-8667-18EFAE338328}
+	EndGlobalSection
+EndGlobal

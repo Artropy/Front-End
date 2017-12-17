@@ -23,7 +23,6 @@ import { MatChipsModule } from '@angular/material';
 import { MatTooltipModule } from '@angular/material';
 
 
-
 // Artropy custom components
 import { AppComponent } from './app.component';
 import { ArtropyTopNavComponent } from './top-nav/top-nav.component';
@@ -56,7 +55,12 @@ import * as jquery from 'jquery';
 import * as bootstrap from 'bootstrap';
 // DROPZONE
 import * as dropzone from 'dropzone';
+
+// GraphQL
+import * as graphql from 'graphql';
+
 import { OriginalsService } from './originals.service';
+import { BottomFooterComponent } from './bottom-footer/bottom-footer.component';
 
 
 
@@ -107,6 +111,7 @@ const appRoutes: Routes = [
     ImagePageComponent,
     Http404PageComponent,
     UploadPageComponent,
+    BottomFooterComponent,
   ],
   imports: [
     BrowserModule,

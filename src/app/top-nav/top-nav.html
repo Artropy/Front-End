@@ -3,7 +3,7 @@
     <img src='/assets/svg-material-icons/ic_menu_black_24px.svg' style='color:white;width:24px;height:24px;'>
   </button>
   <button class='logo' mat-button routerLink="/home" routerLinkActive="active">
-    <img src='../../assets/images/logoDraftOne.svg' style="width:24px;height:24px;"> Artropy
+    Artropy
   </button>
   <div class='spacer' style='margin:auto;'>
     <form class="example-form">
@@ -24,11 +24,12 @@
 </mat-toolbar>
 <div class='headerBodyBreak'></div>
 <mat-sidenav-container class="example-sidenav-fab-container leftNavigation" style="height:1000px; left:0;">
-  <mat-sidenav #sidenav mode="side" opened="true">
+  <mat-sidenav #sidenav mode="side" opened="true" class='sidenav'>
     <mat-list>
       <mat-list-item>
-        <button routerLink="/originals" routerLinkActive="active" mat-button class="">Originals
-          <img src='/assets/svg-material-icons/ic_brush_white_24px.svg'> </button>
+        <button routerLink="/originals" routerLinkActive="active" mat-button class=""> Originals
+          <img src='/assets/svg-material-icons/ic_brush_white_24px.svg'>
+        </button>
 
       </mat-list-item>
       <mat-list-item>

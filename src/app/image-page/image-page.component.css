@@ -28,7 +28,8 @@
   width:100%;
 }
 
-
+button:focus {outline:none; }
+  
 .button-row {
   display: flex;
   align-items: center;
