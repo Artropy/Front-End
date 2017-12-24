@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="GraphQL" Version="0.17.3" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="1.7.1" />
     <PackageReference Include="NLog" Version="4.4.12" />
   </ItemGroup>
 
