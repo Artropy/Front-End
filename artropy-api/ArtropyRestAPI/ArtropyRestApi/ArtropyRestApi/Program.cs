@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,46 +14,15 @@ using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
 using Newtonsoft.Json;
 
-namespace ArtropyRestApi
-{
-    public class Program
-    {
+namespace ArtropyRestApi{
+    public class Program {
 
-        private const string EndpointUri = "https://localhost:8081";
-        private const string PrimaryKey = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
-        static DocumentClient client;
+          private const string EndpointUri = "localhost:8081";
+          private const string PrimaryKey = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
+          static DocumentClient client;
 
-        public static void Main(string[] args)
-        {
-            //MyMethod().Wait();
-            //Console.ReadKey();
+          public static void Main(string[] args) {
 
-        }
-
-        static async Task MyMethod()
-        {
-            try
-            {
-                using (client = new DocumentClient(new Uri(EndpointUri), PrimaryKey))
-                {
-                    IEnumerable<Database> database = from db in client.CreateDatabaseQuery()
-                                                     select db;
-
-                    foreach (var item in database)
-                    {
-                        Console.WriteLine(item.Id);
-                    }
-
-
-                }
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine("Error {0}", e.Message);
-
-            }
-       
-
-        }
+          }
     }
 }

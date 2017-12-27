@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -24,6 +24,7 @@ namespace ArtropyRestApi.Model
         [DataType(DataType.Date)]
         public string dateJoined { get; set; }
         public bool premiumMember { get; set; }
+        public Sponser sponser { get; set; }
      
 
         public void subscribe()
