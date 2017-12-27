@@ -1,0 +1,11 @@
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\bin\Debug\netcoreapp2.0\ArtropyRestApi.deps.json
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\bin\Debug\netcoreapp2.0\ArtropyRestApi.runtimeconfig.json
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\bin\Debug\netcoreapp2.0\ArtropyRestApi.runtimeconfig.dev.json
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\bin\Debug\netcoreapp2.0\ArtropyRestApi.dll
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\bin\Debug\netcoreapp2.0\ArtropyRestApi.pdb
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\obj\Debug\netcoreapp2.0\ArtropyRestApi.csprojResolveAssemblyReference.cache
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\obj\Debug\netcoreapp2.0\ArtropyRestApi.csproj.CoreCompileInputs.cache
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\obj\Debug\netcoreapp2.0\ArtropyRestApi.AssemblyInfoInputs.cache
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\obj\Debug\netcoreapp2.0\ArtropyRestApi.AssemblyInfo.cs
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\obj\Debug\netcoreapp2.0\ArtropyRestApi.dll
+C:\Projects\Artropy\artropy-api\ArtropyRestAPI\ArtropyRestApi\ArtropyRestApi\obj\Debug\netcoreapp2.0\ArtropyRestApi.pdb
