@@ -1,15 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ArtropyRestApi.Model;
-using ArtropyRestApi.Data;
+using Microsoft.EntityFrameworkCore;
 
-namespace ArtropyRestApi.Data
+namespace ArtropyRestApi.Model
 {
     public class ApiDbContext : DbContext
     {
+
         public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options)
         {
 
@@ -19,7 +14,8 @@ namespace ArtropyRestApi.Data
         public DbSet<ArtropyRestApi.Model.Users> Users { get; set; }
         public DbSet<ArtropyRestApi.Model.Account> Account { get; set; }
         public DbSet<ArtropyRestApi.Model.DigitalAsset> DigitalAsset { get; set; }
+        public DbSet<ArtropyRestApi.Model.Ticket> Ticket { get; set; }
 
 
-    }
+  }
 }

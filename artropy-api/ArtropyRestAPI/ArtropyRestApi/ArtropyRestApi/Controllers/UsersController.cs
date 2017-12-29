@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ArtropyRestApi.Data;
+using ArtropyRestApi;
 using ArtropyRestApi.Model;
 
 
@@ -124,5 +124,26 @@ namespace ArtropyRestApi.Controllers
         {
             return _context.Users.Any(e => e.id == id);
         }
+
+
+
+    public List<Users> getUser() {
+      var user = new List<Users>();
+      return user;
     }
+
+    public void insertNewUser() {
+      return;
+    }
+
+    public void updateUser() {
+
+    }
+
+    public void uploadUserImage() {
+      return;
+    }
+
+
+  }
 }

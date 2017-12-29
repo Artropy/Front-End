@@ -2904,15 +2904,6 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "NLog/4.4.12": {
-        "type": "package",
-        "compile": {
-          "lib/net45/NLog.dll": {}
-        },
-        "runtime": {
-          "lib/net45/NLog.dll": {}
-        }
-      },
       "NuGet.Frameworks/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -8247,31 +8238,6 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
-      ]
-    },
-    "NLog/4.4.12": {
-      "sha512": "fODew3BFT2XhAuqhGo2ZYT9OJE0ciGEBfvKXOmAAvaDsP/3ROIf083p8QUnmwKKw4jCkVW06ObX6gn/eFi2Skg==",
-      "type": "package",
-      "path": "nlog/4.4.12",
-      "files": [
-        "lib/MonoAndroid10/NLog.dll",
-        "lib/MonoAndroid10/NLog.xml",
-        "lib/Xamarin.iOS10/NLog.dll",
-        "lib/Xamarin.iOS10/NLog.xml",
-        "lib/net35/NLog.dll",
-        "lib/net35/NLog.xml",
-        "lib/net40/NLog.dll",
-        "lib/net40/NLog.xml",
-        "lib/net45/NLog.dll",
-        "lib/net45/NLog.xml",
-        "lib/sl4/NLog.dll",
-        "lib/sl4/NLog.xml",
-        "lib/sl5/NLog.dll",
-        "lib/sl5/NLog.xml",
-        "lib/wp8/NLog.dll",
-        "lib/wp8/NLog.xml",
-        "nlog.4.4.12.nupkg.sha512",
-        "nlog.nuspec"
       ]
     },
     "NuGet.Frameworks/4.0.0": {
@@ -13750,10 +13716,10 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.3",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 2.0.1",
       "Microsoft.Azure.DocumentDB.Core >= 1.7.1",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.1",
-      "NLog >= 4.4.12",
       "NUnit >= 3.9.0"
     ]
   },
@@ -13808,6 +13774,10 @@
             "target": "Package",
             "version": "[2.0.3, )"
           },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
           "Microsoft.Azure.DocumentDB.Core": {
             "target": "Package",
             "version": "[1.7.1, )"
@@ -13821,10 +13791,6 @@
             "target": "Package",
             "version": "[2.0.1, )"
           },
-          "NLog": {
-            "target": "Package",
-            "version": "[4.4.12, )"
-          },
           "NUnit": {
             "target": "Package",
             "version": "[3.9.0, )"
@@ -13837,17 +13803,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NLog 4.4.12' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "NLog",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

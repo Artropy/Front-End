@@ -7,38 +7,39 @@ namespace ArtropyRestApi.Model
 {
     public class Community
     {
+        public string region { get; set; }
 
         public void searchDigitaAssets()
         {
 
         }
 
-        public void originals()
+        public static void originals()
         {
 
         }
 
-        public void trending()
+        public static void trending()
         {
 
         }
 
-        public void reimaginations()
+        public static void reimaginations()
         {
 
         }
 
-        public void digitalAssetByTags()
+        public static void digitalAssetByTags()
         {
 
         }
 
-        public void topViewed()
+        public static void topViewed()
         {
 
         }
 
-        public void topFavorited()
+        public static void topFavorited()
         {
 
         }

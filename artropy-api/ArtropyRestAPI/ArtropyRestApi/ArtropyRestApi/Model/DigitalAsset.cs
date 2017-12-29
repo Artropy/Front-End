@@ -23,32 +23,5 @@ namespace ArtropyRestApi.Model
         public bool artropyPurchaseAble { get; set; }
         public decimal artropyPrice { get; set; }
 
-
-        public void updateInfo()
-        {
-
-        }
-
-        public void updatefavorited()
-        {
-
-        }
-
-        public void updateLiked()
-        {
-
-        }
-
-        public void addReview()
-        {
-
-        }
-
-        public void editReview()
-        {
-
-        }
-
-
     }
 }

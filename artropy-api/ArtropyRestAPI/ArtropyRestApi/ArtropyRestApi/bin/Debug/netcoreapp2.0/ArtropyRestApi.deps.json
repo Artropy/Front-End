@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "2d214d77534d55acce31e6daf735539c0d882862"
+    "signature": "46131774bf2e53e69ce8d8ffc731806121b6d75f"
   },
   "compilationOptions": {
     "defines": [
@@ -24,10 +24,10 @@
       "ArtropyRestApi/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.3",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.0.1",
           "Microsoft.Azure.DocumentDB.Core": "1.7.1",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.1",
-          "NLog": "4.4.12",
           "NUnit": "3.9.0"
         },
         "runtime": {
@@ -2525,14 +2525,6 @@
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
-        }
-      },
-      "NLog/4.4.12": {
-        "runtime": {
-          "lib/net45/NLog.dll": {}
-        },
-        "compile": {
-          "lib/net45/NLog.dll": {}
         }
       },
       "NuGet.Frameworks/4.0.0": {
@@ -5664,13 +5656,6 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
-    },
-    "NLog/4.4.12": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-fODew3BFT2XhAuqhGo2ZYT9OJE0ciGEBfvKXOmAAvaDsP/3ROIf083p8QUnmwKKw4jCkVW06ObX6gn/eFi2Skg==",
-      "path": "nlog/4.4.12",
-      "hashPath": "nlog.4.4.12.nupkg.sha512"
     },
     "NuGet.Frameworks/4.0.0": {
       "type": "package",
