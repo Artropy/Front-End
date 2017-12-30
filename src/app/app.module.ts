@@ -6,6 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { MockBackend } from '@angular/http/testing'; // <-- for dev enviroment only
+import {BaseRequestOptions, Http} from '@angular/http';
+
 
 // Angular Material Imports
 import { MatToolbarModule } from '@angular/material';
@@ -137,7 +140,12 @@ const appRoutes: Routes = [
     MatTooltipModule
 
   ],
-  providers: [OriginalsService],
+  providers: [OriginalsService,    MockBackend,
+    BaseRequestOptions, {
+      provide: Http,
+      deps: [MockBackend, BaseRequestOptions],
+      useFactory: (backend: MockBackend, options: BaseRequestOptions) => { return new Http(backend, options); }
+  }],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
