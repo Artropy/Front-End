@@ -17,7 +17,7 @@ export class MockBackendService {
             console.log('mockConnection url:: ' + c.request.url);
             const URL = "http://localhost:8080/users";
             const usersRegEx = /\/users\/([0-9]+)/i;
- 
+       
  
             if (c.request.url === URL && c.request.method === 0) {
                 console.log(JSON.stringify(USERS));
@@ -25,8 +25,8 @@ export class MockBackendService {
                     body: JSON.stringify(USERS)
                 })));
             } else if (c.request.url.match(usersRegEx) && c.request.method === 0) {
-                let matches = USERS.filter((hero) => {
-                    return users.id === +(c.request.url.match(usersRegEx)[1])
+                const matches = USERS.filter((hero) => {
+                    return true;
                 });
                 c.mockRespond(new Response( new ResponseOptions({
                     body: JSON.stringify(matches[0])

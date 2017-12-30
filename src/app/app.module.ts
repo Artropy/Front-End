@@ -53,14 +53,14 @@ import { UploadPageComponent } from './upload-page/upload-page.component';
 // Other libraries
 
 // JQuery
-import * as jquery from 'jquery';
-// BOOTSTRAP4
-import * as bootstrap from 'bootstrap';
-// DROPZONE
-import * as dropzone from 'dropzone';
+// import * as jquery from 'jquery';
+// // BOOTSTRAP4
+// import * as bootstrap from 'bootstrap';
+// // DROPZONE
+// import * as dropzone from 'dropzone';
 
-// GraphQL
-import * as graphql from 'graphql';
+// // GraphQL
+// import * as graphql from 'graphql';
 
 import { OriginalsService } from './originals.service';
 import { BottomFooterComponent } from './bottom-footer/bottom-footer.component';
