@@ -9,6 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="UnitTests\ControllerTests\" />
+    <Folder Include="UnitTests\ModelTests\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
