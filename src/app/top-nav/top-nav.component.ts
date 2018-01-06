@@ -11,6 +11,6 @@ import { OnInit, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-top-nav-bar',
   templateUrl: 'top-nav.html',
-  styleUrls: ['top-nav.css']
+  styleUrls: ['top-nav.scss']
 })
 export class ArtropyTopNavComponent {}

@@ -1,3 +1,5 @@
+@import '../../assets/responsive-theme/artropy-main-theme.scss';
+
 .example-icon {
   padding: 0 14px;
 }
@@ -34,7 +36,7 @@ button {
 }
 
 .mat-toolbar{
-  background-color:  #0ACBCB;
+  background-color: $artropy-primary-color;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -131,7 +133,7 @@ background-color:white;
 
   .sidenav{
 
-    background-color: #F16286;
+    background-color: white;
   }
 
   button > img {

@@ -64,6 +64,8 @@ import { UploadPageComponent } from './upload-page/upload-page.component';
 
 import { OriginalsService } from './originals.service';
 import { BottomFooterComponent } from './bottom-footer/bottom-footer.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -115,6 +117,8 @@ const appRoutes: Routes = [
     Http404PageComponent,
     UploadPageComponent,
     BottomFooterComponent,
+    SideNavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

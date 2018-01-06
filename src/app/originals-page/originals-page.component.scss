@@ -1,0 +1,30 @@
+@import '../../assets/responsive-theme/artropy-main-theme.scss';
+
+@media (min-width: 500px) {
+    .grid-originals {
+        display: grid;
+        justify-content: stretch;	
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-row-gap: 5px;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "original . . . ."
+                                ". . . . .";
+    }
+}
+
+@media (min-width: 650px) {
+    .grid-originals {
+        display: grid;
+        justify-content: stretch;	
+        grid-template-columns: 100%;
+        grid-row-gap: 5px;
+        grid-template-rows: 20% 20% auto;
+        grid-template-areas: "original"
+                                "original"
+                                "original";
+    }
+}
+
+.item-original {
+    grid-area: original;
+}

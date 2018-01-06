@@ -1,0 +1,30 @@
+button:focus {outline:none !important; }
+  
+
+input:focus {
+    outline:none !important;
+}
+
+.container {
+    display: grid;
+    justify-content: stretch;	
+    grid-template-columns: 150px auto;
+    grid-row-gap: 5px;
+    grid-template-rows: 50px 800px 100px;
+    grid-template-areas: "header header"
+                            "sidebar main"
+                            "footer footer";
+}
+
+.item-header {
+    grid-area: header;
+  }
+  .item-main {
+    grid-area: main;
+  }
+  .item-side-bar {
+    grid-area: sidebar;
+  }
+  .item-footer {
+    grid-area: footer;
+  }
