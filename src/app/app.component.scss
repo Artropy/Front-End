@@ -10,7 +10,7 @@ input:focus {
     justify-content: stretch;	
     grid-template-columns: 150px auto;
     grid-row-gap: 5px;
-    grid-template-rows: 50px 800px 100px;
+    grid-template-rows: 50px auto 100px;
     grid-template-areas: "header header"
                             "sidebar main"
                             "footer footer";
