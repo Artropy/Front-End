@@ -1,62 +1,40 @@
-<div class='container-fluid' style='height:100vh;'>
-  <div class='row'>
-    <div class="col-md-5 col-sm-12">
-      <h1>Login</h1>
-      <p>Create, inspire, network and support artists around the world.</p>
-      <p>Creativity takes courage.</p>
-      <h1>It's A.A! Artropy Authentic</h1>
-      <p>Artropy Authentic means your purchase is legit, and the products original purchase contributed to the original
-        artist well being; enabling our community to keep creating.
-      </p>
-    </div>
-    <div class="col-md-7 col-sm-12" style='overflow:hidden;'>
-      <mat-tab-group>
-        <mat-tab label="Login" style='overflow:hidden;'>
-          <form class="example-form">
-            <div class='row'>
-              <div class='col-sm-12'>
-                <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Email" value="" type='text'>
-                </mat-form-field>
-              </div>
-              <div class='col-sm-12'>
-                <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Password" value="" type='password'>
-                </mat-form-field>
-              </div>
-            </div>
-            <button mat-button class="">Login</button>
-            <button mat-button class="">Login with Facebook</button>
-          </form>
-        </mat-tab>
-        <mat-tab label="Signup" style='overflow:hidden;'>
-          <form class="example-form">
-            <div class='row'>
-              <div class='col-sm-12'>
-                <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Email" value="">
-                </mat-form-field>
-              </div>
-              <div class='col-sm-12'>
-                <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Username" value="">
-                </mat-form-field>
-              </div>
-              <div class='col-sm-12'>
-                <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Password" value="">
-                </mat-form-field>
-              </div>
-              <div class='col-sm-12'>
-                <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Password Verify" value="">
-                </mat-form-field>
-              </div>
-            </div>
-            <button mat-button class="">Login</button>
-            <button mat-button class="">Login with Facebook</button>
-          </form>
-        </mat-tab>
-      </mat-tab-group>
-    </div>
+<div class='loginContainer'>
+  <div class='loginHeader'>
+    <h1>Login</h1>
+    <p>Create, inspire and support artists around the world.</p>
   </div>
+  <mat-tab-group class="loginSignin">
+    <mat-tab label="Login" style='overflow:hidden;'>
+      <form class="loginForm">
+        <mat-form-field class="loginInput">
+          <span matPrefix>+1 &nbsp;</span>
+          <input matInput placeholder="Email" value="" type='text'>
+        </mat-form-field>
+        <mat-form-field class="loginInput">
+          <span matPrefix>+1 &nbsp;</span>
+          <input matInput placeholder="Password" value="" type='password'>
+        </mat-form-field>
+        <button mat-button class="">Login</button>
+        <button mat-button class="">Login with Facebook</button>
+      </form>
+    </mat-tab>
+    <mat-tab label="Signup" style='overflow:hidden;'>
+      <form class="loginForm">
+        <mat-form-field class="loginInput">
+          <input matInput placeholder="Email" value="" class="loginInput">
+        </mat-form-field>
+        <mat-form-field class="loginInput">
+          <input matInput placeholder="Username" value="">
+        </mat-form-field>
+        <mat-form-field class="loginInput">
+          <input matInput placeholder="Password" value="">
+        </mat-form-field>
+        <mat-form-field class="loginInput">
+          <input matInput placeholder="Password Verify" value="">
+        </mat-form-field>
+        <button mat-button class="">Sign Up</button>
+        <button mat-button class="">Sign Up with Facebook</button>
+      </form>
+    </mat-tab>
+  </mat-tab-group>
+</div>

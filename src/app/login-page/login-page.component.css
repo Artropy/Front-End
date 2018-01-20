@@ -1,3 +1,29 @@
-.example-full-width {
-    width: 100%;
-  }
+.loginContainer{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: 
+  "loginHeader loginHeader"
+  "loginInfo loginSignin";
+}
+
+.loginHeader{
+  grid-area: loginHeader;
+
+}
+
+.loginInfo{
+  grid-area: loginInfo;
+}
+
+.loginSignin{
+  grid-area: loginSignin;
+}
+
+.loginInput{
+  width:100%;
+}
+
+.loginForm{
+  width:100%;
+}

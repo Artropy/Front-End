@@ -4,7 +4,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   selector: 'app-originals-page',
   templateUrl: './originals-page.component.html',
   styleUrls: ['./originals-page.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class OriginalsPageComponent implements OnInit {
 

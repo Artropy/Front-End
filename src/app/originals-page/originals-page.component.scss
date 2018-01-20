@@ -3,14 +3,19 @@
 @media (min-width: 500px) {
     .grid-originals {
         display: grid;
-        justify-content: start;	
+        justify-content: stretch;	
         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
         grid-row-gap: 5px;
         grid-template-rows: auto;
         grid-template-areas: none;
-        
+        grid-row-gap: 30px;
+        grid-column-gap: 5px;
+        // grid-gap: 10px;
+        align-items: stretch;
     }
 }
+
+
 
 // @media (min-width: 650px) {
 //     .grid-originals {
@@ -39,6 +44,13 @@
 .img-card{
     width:100%;
     height:auto;
+}
+
+.mat-card{
+    padding: 10px !important;
+    align-self: stretch;
+    justify-self: stretch;
+    height:100%;
 }
 
 // mat-card{
