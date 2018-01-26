@@ -1,4 +1,6 @@
-# GitLab
+# Repo Mirrors
+
+This Project is mirrored in two additional locations.
 
 This project is also located with continious integration tools and build pipelines:
 https://gitlab.com/Yuifa/Artropy.git
