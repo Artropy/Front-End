@@ -10,15 +10,15 @@ input:focus {
     justify-content: stretch;	
     grid-template-columns: 200px auto;
     grid-row-gap: 5px;
-    grid-template-rows: 50px auto 100px;
+    grid-template-rows: 50px minmax(100vh, auto) 100px;
     grid-template-areas: "header header"
                             "sidebar main"
-                            "footer footer";
+                            "sidebar footer";
 }
 
 .item-header {
     grid-area: header;
-  }
+}
   .item-main {
     grid-area: main;
   }

@@ -1,9 +1,9 @@
-<mat-sidenav-container class="example-sidenav-fab-container leftNavigation" style="height:1000px; left:0;">
+<mat-sidenav-container class="leftNavigation" >
   <mat-sidenav #sidenav mode="side" opened="true" class='sidenav'>
     <mat-list>
       <mat-list-item>
         <button routerLink="/originals" routerLinkActive="active" mat-button class=""> Originals
-          <img src='/assets/svg-material-icons/ic_brush_white_24px.svg'>
+          <img src='/assets/svg-material-icons/ic_brush_white_24px.svg' alt="Originals Icon">
         </button>
       </mat-list-item>
       <mat-list-item>
@@ -32,7 +32,7 @@
       </mat-list-item>
       <mat-list-item>
         <button routerLink="/liked" routerLinkActive="active" mat-button class="">Liked
-          <img src='/assets/svg-material-icons/ic_star_white_24px.svg'> </button>
+          <img src='/side-nav/assets/icons/liked-icon.svg' alt="Liked Icon"> </button>
       </mat-list-item>
       <mat-list-item>
         <button routerLink="/following" routerLinkActive="active" mat-button class="">Following
@@ -56,7 +56,7 @@
       </mat-list-item>
     </mat-list>
   </mat-sidenav>
-  <mat-sidenav-container class="example-sidenav-fab-container rightOptions" style="height:1000px; left:0;">
+  <mat-sidenav-container class="rightOptions" style="height:1000px; left:0;">
     <mat-sidenav align="end" #sidenavright mode="side" opened="false">
       <mat-list>
         <mat-list-item>
