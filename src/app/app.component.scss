@@ -24,13 +24,14 @@ input:focus {
   }
   .item-side-bar {
     height: 100%;
-    width: 160px;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
-    overflow-y: hidden;
+    overflow-y: hidden; // hide vertical
+overflow-x: hidden; // hide horizontal
     padding-top: 50px;
   }
   .item-footer {

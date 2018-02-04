@@ -66,6 +66,8 @@ import { OriginalsService } from './originals.service';
 import { BottomFooterComponent } from './bottom-footer/bottom-footer.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { AssetCommentsComponent } from './asset-comments/asset-comments.component';
+import { RelatedAssetsComponent } from './related-assets/related-assets.component';
 
 
 
@@ -119,6 +121,8 @@ const appRoutes: Routes = [
     BottomFooterComponent,
     SideNavComponent,
     FooterComponent,
+    AssetCommentsComponent,
+    RelatedAssetsComponent,
   ],
   imports: [
     BrowserModule,

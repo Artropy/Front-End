@@ -46,3 +46,31 @@ button:focus {outline:none; }
 }
 
 
+
+
+.image-page-container{
+  display:grid;
+  grid-template-columns: auto 200px;
+  grid-template-rows: 200px 1200px auto;
+
+  grid-template-areas: "header header"
+  "image relatedImages"
+  "discussion discussion";
+
+}
+
+.image-page-image{
+  grid-area: image;
+}
+
+.image-page-disscusion{
+  grid-area: disscusion;
+}
+
+.image-page-header{
+  grid-area: header;
+}
+
+.relatedImages{
+  grid-area: relatedImages;
+}

@@ -1,52 +1,54 @@
-<div class='row'>
-    <mat-toolbar class='col-md-12'>
-        <mat-toolbar-row>
-                <h1 class=''>Rain </h1><span>Ruby</span>
+<div class='image-page-container'>
+    <div class='image-page-header'>
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <h1 class=''>Rain </h1>
+                <span>Ruby</span>
                 <span class="example-spacer"></span>
                 <span class="example-spacer">Ad./ Sponser Place Holder.</span>
                 <span class="example-spacer"></span>
-            <div class="button-row">
-                <button mat-icon-button aria-pressed="false">
-                    <img src='/assets/svg-material-icons/ic_add_shopping_cart_black_24px.svg'>
-                </button>
-                <button mat-icon-button aria-pressed="false">
-                    <img src='/assets/svg-material-icons/ic_file_download_black_24px.svg'>
-                </button>
-                <button mat-icon-button aria-pressed="false">
-                    <img src='/assets/svg-material-icons/ic_card_giftcard_black_24px.svg'>
-                </button>
-                <button mat-icon-button aria-pressed="false">
-                    <img src='/assets/svg-material-icons/ic_share_black_24px.svg'>
-                </button>
-                <button mat-icon-button aria-pressed="false" (click)="openArtSnackBar()">
-                    <img src='/assets/svg-material-icons/ic_star_border_black_24px.svg'>
-                </button>
-                <button mat-icon-button aria-pressed="false">
-                    <img src='/assets/svg-material-icons/ic_zoom_out_map_black_24px.svg'>
-                </button>
-            </div>
-        </mat-toolbar-row>
-        <mat-toolbar-row>
-            <mat-chip-list>
-                <mat-chip color="accent" selected="true" class='image-ratio'  bottom="position">1,000,000 Views</mat-chip>
-                <mat-chip color="accent" selected="true" class='image-ratio' matTooltip="Image Ratio" bottom="position">16:9</mat-chip>
-                <mat-chip color="primary" selected="true" class='image-resolution' matTooltip="Original Image Resolution" bottom="position">1920X1080</mat-chip>
-            </mat-chip-list>
-            <span class="example-spacer"></span>
-        </mat-toolbar-row>
-    </mat-toolbar>
-    <br><br>
-    <hr>
-</div>
-<div class='row'>
-    <div class='col-sm-6'>
-        <mat-card class="example-card">
-            <mat-card-content>
-                <img src='../assets/images/imageOne.jpg' class='image-fluid'>
-            </mat-card-content>
-        </mat-card>
+                <div class="button-row">
+                    <button mat-icon-button aria-pressed="false">
+                        <img src='/assets/svg-material-icons/ic_add_shopping_cart_black_24px.svg'>
+                    </button>
+                    <button mat-icon-button aria-pressed="false">
+                        <img src='/assets/svg-material-icons/ic_file_download_black_24px.svg'>
+                    </button>
+                    <button mat-icon-button aria-pressed="false">
+                        <img src='/assets/svg-material-icons/ic_card_giftcard_black_24px.svg'>
+                    </button>
+                    <button mat-icon-button aria-pressed="false">
+                        <img src='/assets/svg-material-icons/ic_share_black_24px.svg'>
+                    </button>
+                    <button mat-icon-button aria-pressed="false" (click)="openArtSnackBar()">
+                        <img src='/assets/svg-material-icons/ic_star_border_black_24px.svg'>
+                    </button>
+                    <button mat-icon-button aria-pressed="false">
+                        <img src='/assets/svg-material-icons/ic_zoom_out_map_black_24px.svg'>
+                    </button>
+                </div>
+            </mat-toolbar-row>
+            <mat-toolbar-row>
+                <mat-chip-list>
+                    <mat-chip color="accent" selected="true" class='image-ratio' bottom="position">1,000,000 Views</mat-chip>
+                    <mat-chip color="accent" selected="true" class='image-ratio' matTooltip="Image Ratio" bottom="position">16:9</mat-chip>
+                    <mat-chip color="primary" selected="true" class='image-resolution' matTooltip="Original Image Resolution" bottom="position">1920X1080</mat-chip>
+                </mat-chip-list>
+                <span class="example-spacer"></span>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <hr>
     </div>
-    <div class='col-sm-6'>
+    <div class='image-page-image'>
+        <div class='col-sm-6'>
+            <mat-card class="example-card">
+                <mat-card-content>
+                    <img src='../assets/images/imageOne.jpg' class='image-fluid'>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <div class='image-page-disscusion'>
         <mat-form-field style='width:100%;'>
             <textarea matInput placeholder="Comment" maxlength="400" #comment matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5"></textarea>
             <mat-hint align="start">
