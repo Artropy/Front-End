@@ -3,7 +3,7 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 20% 80%;
   grid-template-areas: 
-  "loginHeader loginHeader"
+  "loginHeader loginSignin"
   "loginInfo loginSignin";
 }
 
@@ -26,4 +26,9 @@
 
 .loginForm{
   width:100%;
+}
+
+.mat-ink-bar {
+
+  background-color:#0ACBCB !important;
 }

@@ -1,9 +1,69 @@
-.leftNavigation > button{
-    background-color:blue;
-    color:blue;
+.leftNavigation{
+    height:100vh;
+    width:100%;
+    left:0;
+    overflow-y: hidden; // hide vertical
+    overflow-x: hidden; // hide horizontal
 }
 
-mat-sidenav-container {
+.sidenav{
+    height:100%;
+    background-color:rgb(75, 75, 75);
+    width:100%;
+    overflow-y: hidden; // hide vertical
+overflow-x: hidden; // hide horizontal
+}
 
-    background-color:blue;
+.leftNav{
+    overflow-y: hidden; // hide vertical
+overflow-x: hidden; // hide horizontal
+}
+
+// .navButton {
+//     display: grid;
+//     background-color:white;
+//     color:rgb(75, 75, 75);
+//     width:100%;
+//     grid-template-columns: auto 50px;
+//     grid-template-rows: 100%;
+//     grid-template-areas: "navButtonText navButtonIcon";
+// }
+
+// .navButton:hover{
+//     background-color:#0ACBCB; 
+// }
+
+// .navButtonText{
+//     grid-area: navButtonText;
+//     justify-self: start;
+
+// }
+
+// .navButtonIcon{
+//     grid-area: navButtonIcon;
+//     justify-self: end; 
+// }
+
+.navButton {
+    display: grid;
+    background-color:white;
+    color:rgb(75, 75, 75);
+    width:100%;
+    display: flex !important; 
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    
+}
+
+.navButton:hover{
+    background-color:#0ACBCB; 
+}
+
+.navButtonText{
+    align-self: flex-start !important;
+
+}
+
+.navButtonIcon{
+    align-self: flex-end !important;
 }

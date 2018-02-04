@@ -1,96 +1,113 @@
-<mat-sidenav-container class="leftNavigation" >
-  <mat-sidenav #sidenav mode="side" opened="true" class='sidenav'>
-    <mat-list>
-      <mat-list-item>
-        <button routerLink="/originals" routerLinkActive="active" mat-button class=""> Originals
-          <img src='/assets/svg-material-icons/ic_brush_white_24px.svg' alt="Originals Icon">
+<div class="leftNav">
+  <mat-sidenav-container class="leftNavigation">
+    <mat-sidenav #sidenav mode="side" opened="true" class='sidenav'>
+      <mat-list class="sidenav">
+        <mat-list-item>
+          <button routerLink="/originals" routerLinkActive="active" mat-button class="navButton">
+            <img src='/assets/svg-material-icons/ic_brush_black_24px.svg' alt="Originals Icon">
+            <span class="navButtonText">
+              Originals
+            </span>
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button routerLink="/studios" routerLinkActive="active" mat-button class="navButton">
+            <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'>
+            <span class="navButtonText">
+              Studios
+            </span>
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button routerLink="/reimaginations" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_autorenew_black_24px.svg'>
+            <span class="navButtonText">
+
+              Re-imaginations
+            </span>
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button routerLink="/trending" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_trending_up_black_24px.svg'>
+            <span class="navButtonText">
+              Trending
+            </span>
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button routerLink="/masterworks" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_payment_black_24px.svg'>
+            <span class="navButtonText">
+
+              Masterworks
+            </span>
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button routerLink="/shop" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_shop_black_24px.svg'>
+            <span class="navButtonText">
+              Shop
+            </span>
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button routerLink="/history" routerLinkActive="active" mat-button class="navButton">
+            <span class="navButtonText">
+              <img class="navButtonIcon" src='/assets/svg-material-icons/ic_history_black_24px.svg'> History
+            </span>
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button routerLink="/liked" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_star_border_black_24px.svg'>
+            <span class="navButtonText">
+              Liked
+            </span>
+             </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button routerLink="/following" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_people_black_24px.svg'>
+            <span class="navButtonText">
+              Following
+            </span>
         </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/studios" routerLinkActive="active" mat-button class="">Studios
-          <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/reimaginations" routerLinkActive="active" mat-button class="">Re-imaginations
-          <img src='/assets/svg-material-icons/ic_autorenew_white_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/trending" routerLinkActive="active" mat-button class="">Trending
-          <img src='/assets/svg-material-icons/ic_trending_up_white_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/masterworks" routerLinkActive="active" mat-button class="">Masterworks
-          <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/shop" routerLinkActive="active" mat-button class="">Shop
-          <img src='/assets/svg-material-icons/ic_shop_black_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/history" routerLinkActive="active" mat-button class="">History
-          <img src='/assets/svg-material-icons/ic_history_white_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/liked" routerLinkActive="active" mat-button class="">Liked
-          <img src='/side-nav/assets/icons/liked-icon.svg' alt="Liked Icon"> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/following" routerLinkActive="active" mat-button class="">Following
-          <img src='/assets/svg-material-icons/ic_people_white_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/events" routerLinkActive="active" mat-button class="">Events
-          <img src='/assets/svg-material-icons/ic_event_white_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/videos" routerLinkActive="active" mat-button class="">Videos
-          <img src='/assets/svg-material-icons/ic_video_library_white_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/live" routerLinkActive="active" mat-button class="">Live
-          <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'> </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button routerLink="/Sponsers" routerLinkActive="active" mat-button class="">Sponsers
-          <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'> </button>
-      </mat-list-item>
-    </mat-list>
-  </mat-sidenav>
-  <mat-sidenav-container class="rightOptions" style="height:1000px; left:0;">
-    <mat-sidenav align="end" #sidenavright mode="side" opened="false">
-      <mat-list>
-        <mat-list-item>
-          <button routerLink="/socialMedia" routerLinkActive="active" mat-button class="">
-            <img src='/assets/svg-material-icons/ic_settings_white_24px.svg'>Social Media</button>
         </mat-list-item>
         <mat-list-item>
-          <button routerLink="/Portfolio" routerLinkActive="active" mat-button class="">
-            <img src='/assets/svg-material-icons/ic_settings_white_24px.svg'>Portfolio</button>
+          <button routerLink="/events" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_event_black_24px.svg'>
+            <span class="navButtonText">
+              Events
+            </span>
+            </button>
         </mat-list-item>
         <mat-list-item>
-          <button routerLink="/notifications" routerLinkActive="active" mat-button class="">
-            <img src='/assets/svg-material-icons/ic_add_alert_white_24px.svg'> Notifications</button>
+          <button routerLink="/videos" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_video_library_black_24px.svg'>
+            <span class="navButtonText">
+              Videos
+            </span>
+            </button>
         </mat-list-item>
         <mat-list-item>
-          <button routerLink="/upload" routerLinkActive="active" mat-button class="">
-            <img src='/assets/svg-material-icons/ic_file_upload_black_24px.svg'>Upload</button>
+          <button routerLink="/live" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_payment_black_24px.svg'>
+            <span class="navButtonText">
+              Live
+            </span>
+          </button>
         </mat-list-item>
         <mat-list-item>
-          <button routerLink="/transactionHistory" routerLinkActive="active" mat-button class="">
-            <img src='/assets/svg-material-icons/ic_settings_white_24px.svg'>Transaction History</button>
-        </mat-list-item>
-        <mat-list-item>
-          <button routerLink="/settings" routerLinkActive="active" mat-button class="">
-            <img src='/assets/svg-material-icons/ic_settings_white_24px.svg'> Settings </button>
-        </mat-list-item>
-        <mat-list-item>
-          <button routerLink="/copyRightArtWork" routerLinkActive="active" mat-button class="">
-            <img src='/assets/svg-material-icons/ic_copyright_white_24px.svg'>Copyright Artwork</button>
-        </mat-list-item>
-        <mat-list-item>
-          <button routerLink="/supportTickets" routerLinkActive="active" mat-button class="">
-            <img src='/assets/svg-material-icons/ic_settings_white_24px.svg'>Support Tickets</button>
+          <button routerLink="/Sponsers" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_payment_black_24px.svg'>
+            <span class="navButtonText">
+              Sponsers
+            </span>
+          </button>
         </mat-list-item>
       </mat-list>
     </mat-sidenav>
   </mat-sidenav-container>
+</div>

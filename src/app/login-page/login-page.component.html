@@ -7,33 +7,37 @@
     <mat-tab label="Login" style='overflow:hidden;'>
       <form class="loginForm">
         <mat-form-field class="loginInput">
-          <span matPrefix>+1 &nbsp;</span>
+            <span matPrefix><img src='/assets/svg-material-icons/ic_email_black_24px.svg' /> &nbsp;</span>
           <input matInput placeholder="Email" value="" type='text'>
         </mat-form-field>
         <mat-form-field class="loginInput">
-          <span matPrefix>+1 &nbsp;</span>
+          <span matPrefix><img src='/assets/svg-material-icons/ic_lock_black_24px.svg' /></span>
           <input matInput placeholder="Password" value="" type='password'>
         </mat-form-field>
         <button mat-button class="">Login</button>
-        <button mat-button class="">Login with Facebook</button>
+        <button mat-button class=""><img src='/assets/svg-material-icons/facebook.svg' /> Login with Facebook</button>
       </form>
     </mat-tab>
     <mat-tab label="Signup" style='overflow:hidden;'>
       <form class="loginForm">
         <mat-form-field class="loginInput">
+            <span matPrefix><img src='/assets/svg-material-icons/ic_email_black_24px.svg' /></span>
           <input matInput placeholder="Email" value="" class="loginInput">
         </mat-form-field>
         <mat-form-field class="loginInput">
+            <span matPrefix><img src='/assets/svg-material-icons/ic_account_box_black_24px.svg' /></span>
           <input matInput placeholder="Username" value="">
         </mat-form-field>
         <mat-form-field class="loginInput">
-          <input matInput placeholder="Password" value="">
+            <span matPrefix><img src='/assets/svg-material-icons/ic_lock_outline_black_24px.svg' /></span>
+          <input matInput placeholder="Password" value="" type='password'>
         </mat-form-field>
         <mat-form-field class="loginInput">
-          <input matInput placeholder="Password Verify" value="">
+            <span matPrefix><img src='/assets/svg-material-icons/ic_lock_black_24px.svg' /></span>
+          <input matInput placeholder="Password Verify" value="" type='password'>
         </mat-form-field>
         <button mat-button class="">Sign Up</button>
-        <button mat-button class="">Sign Up with Facebook</button>
+        <button mat-button class=""> <img src='/assets/svg-material-icons/facebook.svg' /> Sign Up with Facebook</button>
       </form>
     </mat-tab>
   </mat-tab-group>
