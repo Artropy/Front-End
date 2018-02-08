@@ -1,0 +1,77 @@
+  .mat-toolbar{
+    // background-color: White;
+    // color:black;
+    // overflow: hidden;
+    // top: 0;
+    // width: 100%;
+    // height:40px;
+    // z-index:100;
+    // left: 0;
+    height:100%;
+  }
+
+.image-page-card{
+  // height:100%;
+  // width:100%;
+}
+.image-fluid{
+  height:auto;
+  width:100%;
+}
+
+button:focus {outline:none; }
+  
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.comment-button-row {
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: space-around; */
+  margin-top: 10px;
+}
+
+.image-page-container{
+  display:grid;
+  grid-template-columns: auto 200px;
+  grid-template-rows: 20vh 80vh auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  
+  grid-template-areas: "header header"
+  "image relatedImages"
+  "discussion discussion";
+}
+
+.image-page-image{
+  grid-area: image;
+}
+
+.image-page-disscusion{
+  grid-area: discussion;
+}
+
+.image-page-header{
+  grid-area: header;
+}
+
+.image-page-related{
+  grid-area: relatedImages;
+}
+
+.mat-card{
+  padding: 10px;
+  margin: 10px;
+}
+
+.image-card{
+  max-height:100%;
+}
+.imageInput{
+
+  width:100%;
+}

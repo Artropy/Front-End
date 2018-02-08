@@ -1,23 +1,28 @@
-<mat-toolbar class="mat-toolbar">
-  <button mat-icon-button (click)="sidenav.toggle()" id=menu_example aria-pressed="false">
-    <img src='/assets/svg-material-icons/ic_menu_black_24px.svg' style='color:white;width:24px;height:24px;'>
-  </button>
-  <button class='logo' mat-button routerLink="/home" routerLinkActive="active">
-    Artropy
-  </button>
-  <div class='spacer' style='margin:auto;'>
-    <form class="example-form">
-      <div class="input-group-sm" style="width:100%;">
-        <input id='artropySearch' style="width:100%;" placeholder="Search..." type="search" class="form-control mr-sm-2" aria-label="Search">
-      </div>
-    </form>
+<mat-toolbar class="mat-toolba header-container">
+  <div class='leftHeader'>
+    <button mat-icon-button (click)="sidenav.toggle()" id=menu_example aria-pressed="false">
+      <img src='/assets/svg-material-icons/ic_menu_black_24px.svg' style='color:white;width:24px;height:24px;'>
+    </button>
+    <button class='logo' mat-button routerLink="/home" routerLinkActive="active">
+      Artropy
+    </button>
   </div>
-  <div class='spacer'></div>
-  <button mat-button class="button-login" routerLink="/login" routerLinkActive="active" class="loginButton">LOG IN</button>
-  <button mat-icon-button aria-pressed="false">
-    <img src='/assets/svg-material-icons/ic_shopping_cart_white_24px.svg'>
-  </button>
-  <button mat-icon-button (click)="sidenavright.toggle()" id=menu_example aria-pressed="false">
-    <img src='/assets/svg-material-icons/ic_more_horiz_black_24px.svg' style='color:white;width:24px;height:24px;'>
-  </button>
+  <div class='searchBar'>
+    <div style='margin:auto;'>
+      <form class="example-form">
+        <div class="input-group-sm" style="width:100%;">
+          <input id='artropySearch' style="width:100%;" placeholder="Search..." type="search" class="form-control mr-sm-2" aria-label="Search">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='rightHeader'>
+    <button mat-button class="button-login" routerLink="/login" routerLinkActive="active" class="loginButton">LOG IN</button>
+    <button mat-icon-button aria-pressed="false">
+      <img src='/assets/svg-material-icons/ic_shopping_cart_white_24px.svg'>
+    </button>
+    <button mat-icon-button (click)="sidenavright.toggle()" id=menu_example aria-pressed="false">
+      <img src='/assets/svg-material-icons/ic_more_horiz_black_24px.svg' style='color:white;width:24px;height:24px;'>
+    </button>
+  </div>
 </mat-toolbar>

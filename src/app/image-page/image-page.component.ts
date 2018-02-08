@@ -4,7 +4,7 @@ import {MatSnackBar} from '@angular/material';
 @Component({
   selector: 'app-image-page',
   templateUrl: './image-page.component.html',
-  styleUrls: ['./image-page.component.css'],
+  styleUrls: ['./image-page.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class ImagePageComponent implements OnInit {

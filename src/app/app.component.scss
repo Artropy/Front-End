@@ -1,5 +1,8 @@
 button:focus {outline:none !important; }
   
+.image-page-card{
+  height:100%;
+}
 
 input:focus {
     outline:none !important;
@@ -62,4 +65,8 @@ overflow-x: hidden; // hide horizontal
 									   color-stop(0.44, rgb(122,153,217)),
 									   color-stop(0.72, rgb(73,125,189)),
 									   color-stop(0.86, rgb(28,58,148)));
+}
+
+.body{
+  background-color:gray !important;
 }
