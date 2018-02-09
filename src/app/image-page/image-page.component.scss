@@ -37,35 +37,49 @@ button:focus {outline:none; }
 
 .image-page-container{
   display:grid;
-  grid-template-columns: auto 200px;
-  grid-template-rows: 20vh 80vh auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  
+  grid-template-columns: auto 250px;
+  grid-template-rows: 200px 1000px auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-color:wheat;
   grid-template-areas: "header header"
   "image relatedImages"
-  "discussion discussion";
+  "discussion relatedImages";
+  padding: 30px;
+  //margin: 10px;
 }
 
 .image-page-image{
   grid-area: image;
+  height:100%;
+  width:100%;
 }
 
 .image-page-disscusion{
   grid-area: discussion;
+  height:100%;
+  width:100%;
 }
 
 .image-page-header{
   grid-area: header;
+  height:100%;
+  width:100%;
 }
 
 .image-page-related{
   grid-area: relatedImages;
+  height:100%;
+  width:100%;
 }
 
 .mat-card{
-  padding: 10px;
-  margin: 10px;
+  // height:100%;
+  // margin:0;
+   //padding:100px;
+  // margin:100px;
+  // width:100%
+
 }
 
 .image-card{
