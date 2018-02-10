@@ -5,17 +5,19 @@
         display: grid;
         justify-content: stretch;	
         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-        grid-row-gap: 5px;
         grid-template-rows: auto;
         grid-template-areas: none;
-        grid-row-gap: 30px;
-        grid-column-gap: 5px;
-        // grid-gap: 10px;
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
         align-items: stretch;
+        background-color:wheat;
     }
 }
 
+img{
+    display:block;
 
+}
 
 // @media (min-width: 650px) {
 //     .grid-originals {
@@ -44,6 +46,7 @@
 .img-card{
     width:100%;
     height:auto;
+    display:block;
 }
 
 .mat-card{
