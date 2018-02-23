@@ -29,7 +29,7 @@
     grid-template-columns: 100%;
     grid-row-gap: 5px;
     grid-template-rows:  repeat(auto-fit, minmax(200px,1fr));;
-    grid-template-areas: none;
+    // grid-template-areas: none;
     grid-row-gap: 30px;
     grid-column-gap: 5px;
     // grid-gap: 10px;
@@ -42,7 +42,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     grid-row-gap: 5px;
     grid-template-rows:  100%;
-    grid-template-areas: "art art art art art";
+    // grid-template-areas: "art art art art art";
     grid-row-gap: 30px;
     grid-column-gap: 5px;
     // grid-gap: 10px;

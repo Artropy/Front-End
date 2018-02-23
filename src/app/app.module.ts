@@ -24,6 +24,9 @@ import { MatTabsModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material';
 import { MatChipsModule } from '@angular/material';
 import { MatTooltipModule } from '@angular/material';
+import { MatSelectModule } from '@angular/material/select';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
 
 
 // Artropy custom components
@@ -69,6 +72,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AssetCommentsComponent } from './asset-comments/asset-comments.component';
 import { RelatedAssetsComponent } from './related-assets/related-assets.component';
 import { ArtistPageComponent } from './artist-page/artist-page.component';
+import { AssetImageCardComponent } from './asset-image-card/asset-image-card.component';
 
 
 
@@ -89,10 +93,11 @@ const appRoutes: Routes = [
   { path: 'cart', component: CartPageComponent },
   { path: 'sponsers', component: SponsersPageComponent },
   { path: 'followed', component: FollowedPageComponent },
+  { path: 'followers', component: FollowedPageComponent },
   { path: 'search', component: SearchPageComponent },
   { path: 'upload', component: UploadPageComponent },
   { path: 'image/:artist/:imageName', component: ImagePageComponent },
-  { path: 'image/:artist/', component: ArtistPageComponent },
+  { path: 'image/:artist', component: ArtistPageComponent },
   { path: '**', component: Http404PageComponent },
 ];
 
@@ -126,6 +131,7 @@ const appRoutes: Routes = [
     AssetCommentsComponent,
     RelatedAssetsComponent,
     ArtistPageComponent,
+    AssetImageCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -148,7 +154,9 @@ const appRoutes: Routes = [
     MatGridListModule,
     MatTabsModule,
     MatChipsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSelectModule,
+    MatProgressBarModule
 
   ],
   providers: [OriginalsService,    MockBackend,

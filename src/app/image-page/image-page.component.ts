@@ -9,16 +9,54 @@ import {MatSnackBar} from '@angular/material';
 })
 export class ImagePageComponent implements OnInit {
 
-  // constructor(public snackBar: MatSnackBar) {}
-
-  // openSnackBar(message: string, action: string) {
-  //   this.snackBar.open(message, action, {
-  //     duration: 2000,
-  //   });
-  // }
-
+  assetID: number;
+  artistName: string;
+  assetName: string;
+  likes: number;
+  views: number;
+  tags: string[];
 
   ngOnInit() {
+
+  }
+
+
+  //GET MAIN IMAGE.
+  getAssetInformation = function (artistName: String, imageName: String){
+
+  }
+
+  //GET RELATED IMAGES.
+  getRelatedAssets = function (tags: string[]){
+
+  }
+
+  //GET TAGS.
+  getAssetTags = function (assetID: number){
+
+  }
+
+  //GET IMAGE STATS.
+  getAssetStats = function (){
+
+  }
+
+  //LIKE IMAGE.
+  likeAsset = function (liked: boolean){
+
+  }
+
+  //ADD TO CART
+  addToCart = function (){
+
+  }
+
+  //DOWNLOAD IMAGE.
+  downloadAsset = function (){
+
+  }
+
+  updateImageViewedCount = function (){
 
   }
 

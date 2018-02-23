@@ -1,19 +1,3 @@
-  .mat-toolbar{
-    // background-color: White;
-    // color:black;
-    // overflow: hidden;
-    // top: 0;
-    // width: 100%;
-    // height:40px;
-    // z-index:100;
-    // left: 0;
-    height:100%;
-  }
-
-.image-page-card{
-  // height:100%;
-  // width:100%;
-}
 .image-fluid{
   height:auto;
   width:100%;
@@ -38,15 +22,20 @@ button:focus {outline:none; }
 .image-page-container{
   display:grid;
   grid-template-columns: auto 250px;
-  grid-template-rows: 200px 1000px auto;
+  grid-template-rows: 150px 1000px auto;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  background-color:wheat;
-  grid-template-areas: "header header"
+  grid-template-areas: "header tags"
   "image relatedImages"
   "discussion relatedImages";
   padding: 30px;
-  //margin: 10px;
+
+}
+
+.image-page-tags{
+  grid-area: tags;
+  height:100%;
+  width:100%;
 }
 
 .image-page-image{
@@ -74,18 +63,55 @@ button:focus {outline:none; }
 }
 
 .mat-card{
-  // height:100%;
-  // margin:0;
-   //padding:100px;
-  // margin:100px;
-  // width:100%
-
+  height:100%;
+  padding:0px;
 }
 
+
+.mat-card-content{
+  margin:5px;
+}
 .image-card{
   max-height:100%;
 }
 .imageInput{
 
   width:100%;
+}
+
+.image-page-card-content {
+  display:grid;
+  height:100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-areas: "imageName imageActions"
+  "imageArtist imageViews"
+  ". imageLikes";
+}
+
+.imageName{
+  grid-area: imageName;
+  font-size: 36px;
+
+
+}
+.imageActions{
+  grid-area: imageActions;
+  justify-self: end;
+}
+
+.imageArtist{
+  grid-area: imageArtist;
+}
+
+.imageViews{
+  grid-area:imageViews;
+  justify-self: end;
+
+}
+
+.imageLikes{
+  grid-area:imageLikes;
+  justify-self: end;
+
 }

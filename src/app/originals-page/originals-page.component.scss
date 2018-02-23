@@ -1,16 +1,26 @@
 @import '../../assets/responsive-theme/artropy-main-theme.scss';
 
 @media (min-width: 500px) {
-    .grid-originals {
+    .grid-originals-results {
         display: grid;
         justify-content: stretch;	
         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
         grid-template-rows: auto;
-        grid-template-areas: none;
         grid-row-gap: 15px;
         grid-column-gap: 15px;
         align-items: stretch;
-        background-color:wheat;
+    }
+}
+
+@media (min-width: 500px) {
+    .grid-originals-featured {
+        display: grid;
+        justify-content: stretch;	
+        grid-template-columns: 100%;
+        grid-template-rows: 200px;
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
+        align-items: stretch;
     }
 }
 
@@ -18,30 +28,6 @@ img{
     display:block;
 
 }
-
-// @media (min-width: 650px) {
-//     .grid-originals {
-//         display: grid;
-//         justify-content: stretch;	
-//         grid-template-columns: repeat(12, 1fr);
-//         grid-row-gap: 5px;
-//         grid-template-rows: auto;
-//         grid-template-areas: none;
-//         grid-auto-flow: column;
-//     }
-// }
-
-// .item-original {
-//     grid-area: original;
-//     grid-column-start: 1;
-//     grid-column-end: 1;
-// }
-
-// .item-original2 {
-//     grid-area: original2;
-//     grid-column-start: 1;
-//     grid-column-end: 1;
-// }
 
 .img-card{
     width:100%;
@@ -51,11 +37,5 @@ img{
 
 .mat-card{
     padding: 10px !important;
-    align-self: stretch;
-    justify-self: stretch;
     height:100%;
 }
-
-// mat-card{
-//     height:100%;
-// }

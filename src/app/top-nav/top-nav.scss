@@ -1,12 +1,16 @@
 @import '../../assets/responsive-theme/artropy-main-theme.scss';
 
-
 .example-button-row {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
+
+.header-container > img{
+  color:white;
+
+}
 
 .button-login {
   color:white;
@@ -111,6 +115,10 @@ button:focus {outline:0;}
   box-sizing: border-box;
 }
 
+
+.searchBar{
+  grid-area:searchBar;
+}
 .header-right{
   grid-area: rightHeader;
 }
@@ -124,8 +132,12 @@ button:focus {outline:0;}
   }
 
   .mat-toolbar > button .loginButton{
-    background-color:#8a0044;
+    color:white;
   }
+
+.loginButton{
+color:white;
+}
 
   .searchBox {
     flex-grow: 3;
@@ -142,6 +154,7 @@ button:focus {outline:0;}
 
     background-color: white;
   }
+
 
   button > img {
     float:right;

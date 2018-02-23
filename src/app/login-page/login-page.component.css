@@ -1,6 +1,6 @@
 .loginContainer{
   display:grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 60%;
   grid-template-rows: 20% 80%;
   grid-template-areas: 
   "loginHeader loginSignin"
@@ -31,4 +31,15 @@
 .mat-ink-bar {
 
   background-color:#0ACBCB !important;
+}
+
+.youtubeButton{
+  background-color: #cc181e;
+  color:white;
+}
+
+.facebookButton{
+  background-color:#3B5998;
+  color:white;
+
 }
