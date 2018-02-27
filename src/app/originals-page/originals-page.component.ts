@@ -7,6 +7,71 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class OriginalsPageComponent implements OnInit {
 
+  originals = [
+    {
+      imageName: "Rain",
+      artistName: "Stephen Moreira",
+      imageSource: "../assets/images/imageOne.jpg"
+    },
+    {     
+      imageName: "Spring",
+      artistName: "Ruby Perez",
+      imageSource: "../assets/images/imageTwo.jpg"
+    },
+    {
+      imageName: "Colors",
+      artistName: "Kevin Marsh",
+      imageSource: "../assets/images/imageThree.jpg"
+    },
+    {
+      imageName: "Stars",
+      artistName: "Rodrigo Zuniga",
+      imageSource: "../assets/images/imageFour.jpg"
+    },
+    {
+      imageName: "Rain",
+      artistName: "Stephen Moreira",
+      imageSource: "../assets/images/imageOne.jpg"
+    },
+    {     
+      imageName: "Spring",
+      artistName: "Ruby Perez",
+      imageSource: "../assets/images/imageTwo.jpg"
+    },
+    {
+      imageName: "Colors",
+      artistName: "Kevin Marsh",
+      imageSource: "../assets/images/imageThree.jpg"
+    },
+    {
+      imageName: "Stars",
+      artistName: "Rodrigo Zuniga",
+      imageSource: "../assets/images/imageFour.jpg"
+    },
+    {
+      imageName: "Rain",
+      artistName: "Stephen Moreira",
+      imageSource: "../assets/images/imageOne.jpg"
+    },
+    {     
+      imageName: "Spring",
+      artistName: "Ruby Perez",
+      imageSource: "../assets/images/imageTwo.jpg"
+    },
+    {
+      imageName: "Colors",
+      artistName: "Kevin Marsh",
+      imageSource: "../assets/images/imageThree.jpg"
+    },
+    {
+      imageName: "Stars",
+      artistName: "Rodrigo Zuniga",
+      imageSource: "../assets/images/imageFour.jpg"
+    }
+  ];
+
+  
+
   constructor() { }
 
   ngOnInit() {

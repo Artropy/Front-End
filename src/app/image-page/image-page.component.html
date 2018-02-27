@@ -3,8 +3,8 @@
         <mat-card class="image-page-card">
             <div class='image-page-card-content'>
                 <div class='imageName'>Rain </div>
-                <div class='imageArtist'>Ruby Perez
-                    <button mat-button>Follow</button>
+                <div class='imageArtist'><a routerLink="/image/Ruby-Perez" routerLinkActive="active" class="card-link">Ruby Perez</a>
+                    <button mat-button color="primary">Follow</button>
                 </div>
                 <div class="imageActions">
                     <button mat-icon-button aria-pressed="false">
@@ -41,8 +41,10 @@
             <mat-card-header>Tags</mat-card-header>
             <mat-divider [inset]="true"></mat-divider>
             <mat-card-content>
-                <mat-chip color="accent" selected="true" class='image-ratio' matTooltip="Image Ratio" bottom="position">16:9</mat-chip>
-                <mat-chip color="primary" selected="true" class='image-resolution' matTooltip="Original Image Resolution" bottom="position">1920X1080</mat-chip>
+                <mat-chip-list>
+                    <mat-chip color="accent" selected="true" class='image-ratio' matTooltip="Image Ratio" bottom="position">16:9</mat-chip>
+                    <mat-chip color="primary" selected="true" class='image-resolution' matTooltip="Original Image Resolution" bottom="position">1920X1080</mat-chip>
+                </mat-chip-list>
             </mat-card-content>
         </mat-card>
     </div>
@@ -55,29 +57,22 @@
     </div>
     <div class='image-page-related'>
         <mat-card class='image-page-card'>
-            <mat-card-header>Sponser</mat-card-header>
-            <!-- <mat-card class='card' style='margin:0;padding:0; border-radius: 25px;'>
-                    <img src='../assets/images/imageTwo.jpg' class='img-fluid' style='border-radius: 25px;'>
-            </mat-card> -->
-            <mat-divider [inset]="true"></mat-divider>
             <mat-card-header>Related</mat-card-header>
-            <mat-divider [inset]="true"></mat-divider>
             <mat-card-content>
-                <mat-divider></mat-divider>
-                <mat-card class='card' style='margin:0;padding:0; border-radius: 25px;'>
-                        <img src='../assets/images/imageOne.jpg' class='img-fluid' style='border-radius: 25px;'>
+                <mat-card class='card' style='margin:0;padding:0; border-radius: 25px; margin-top:10px;'>
+                    <img src='../assets/images/imageOne.jpg' class='img-fluid' style='border-radius: 25px;'>
                 </mat-card>
-                <mat-divider></mat-divider>
-                <mat-card class='card' style='margin:0;padding:0; border-radius: 25px;'>
-                        <img src='../assets/images/imageOne.jpg' class='img-fluid' style='border-radius: 25px;'>
+                <mat-card class='card' style='margin:0;padding:0; border-radius: 25px; margin-top:10px;'>
+                    <img src='../assets/images/imageTwo.jpg' class='img-fluid' style='border-radius: 25px;'>
                 </mat-card>
-                <mat-divider></mat-divider>
-                <mat-card class='card' style='margin:0;padding:0; border-radius: 25px;'>
-                        <img src='../assets/images/imageOne.jpg' class='img-fluid' style='border-radius: 25px;'>
+                <mat-card class='card' style='margin:0;padding:0; border-radius: 25px; margin-top:10px;'>
+                    <img src='../assets/images/imageThree.jpg' class='img-fluid' style='border-radius: 25px;'>
                 </mat-card>
-                <mat-divider></mat-divider>
-                <mat-card class='card' style='margin:0;padding:0; border-radius: 25px;'>
-                        <img src='../assets/images/imageOne.jpg' class='img-fluid' style='border-radius: 25px;'>
+                <mat-card class='card' style='margin:0;padding:0; border-radius: 25px; margin-top:10px;'>
+                    <img src='../assets/images/imageOne.jpg' class='img-fluid' style='border-radius: 25px;'>
+                </mat-card>
+                <mat-card class='card' style='margin:0;padding:0; border-radius: 25px; margin-top:10px;'>
+                    <img src='../assets/images/imageTwo.jpg' class='img-fluid' style='border-radius: 25px;'>
                 </mat-card>
             </mat-card-content>
         </mat-card>
