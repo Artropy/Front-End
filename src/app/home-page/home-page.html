@@ -1,3 +1,30 @@
-<div>
-    <h1>Home</h1>
+<div class='homeGrid'>
+    <div class='headBanner'>
+    <ngx-carousel [inputs]="carouselOne" (carouselLoad)="myfunc($event)" class="banner" >
+            <ngx-item NgxCarouselItem *ngFor="let original of originals let i = index;">
+                <div style="background: no-repeat fixed center url('../assets/images/imageOne.jpg');" class="bannerStyle">
+                    <h1>{{i}}</h1>
+                </div>
+            </ngx-item>
+            <button NgxCarouselPrev class='leftRs'>&lt;</button>
+            <button NgxCarouselNext class='rightRs'>&gt;</button>
+      </ngx-carousel>
+    </div>
+    <div class='featured'>
+        <div class="img-fluid" *ngFor="let original of originals">
+            <mat-card style='border-radius: 25px;'>
+                <mat-card-header>
+                    <mat-card-title>
+                        <a routerLink="/image/{{original.imageName}}/{{original.artistName}" routerLinkActive="active" class="card-link">{{original.imageName}}</a>
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        <a routerLink="/image/{{original.artistName}}" routerLinkActive="active" class="card-link">{{original.artistName}}</a>
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content  [style.background]="'url(' + original.imageSource  + ')'">
+                    <h1>1</h1>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
 </div>

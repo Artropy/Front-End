@@ -73,7 +73,8 @@ import { AssetCommentsComponent } from './asset-comments/asset-comments.componen
 import { RelatedAssetsComponent } from './related-assets/related-assets.component';
 import { ArtistPageComponent } from './artist-page/artist-page.component';
 import { AssetImageCardComponent } from './asset-image-card/asset-image-card.component';
-
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 
 
@@ -156,7 +157,8 @@ const appRoutes: Routes = [
     MatChipsModule,
     MatTooltipModule,
     MatSelectModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    NgxCarouselModule
 
   ],
   providers: [OriginalsService,    MockBackend,
