@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^5.2.4",
     "@angular/platform-browser-dynamic": "^5.2.4",
     "@angular/router": "^5.2.4",
+    "@angular/service-worker": "^5.2.9",
     "@ngrx/entity": "^5.0.1",
     "@ngrx/store": "^5.0.0",
     "angular2-image-upload": "^1.0.0-rc.0",
@@ -34,7 +35,7 @@
     "hammerjs": "^2.0.8",
     "ngx-carousel": "^1.3.5",
     "redux": "^3.7.2",
-    "rxjs": "^5.5.2",
+    "rxjs": "^5.5.6",
     "zone.js": "^0.8.20"
   },
   "devDependencies": {

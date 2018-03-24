@@ -8,6 +8,10 @@ import { HttpModule } from '@angular/http';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MockBackend } from '@angular/http/testing'; // <-- for dev enviroment only
 import {BaseRequestOptions, Http} from '@angular/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
+
 
 
 // Angular Material Imports
@@ -158,8 +162,8 @@ const appRoutes: Routes = [
     MatTooltipModule,
     MatSelectModule,
     MatProgressBarModule,
-    NgxCarouselModule
-
+    NgxCarouselModule,
+    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
   providers: [OriginalsService,    MockBackend,
     BaseRequestOptions, {
