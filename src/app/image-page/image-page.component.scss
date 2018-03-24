@@ -28,7 +28,7 @@ button:focus {outline:none; }
   grid-template-areas: "header tags"
   "image relatedImages"
   "discussion relatedImages";
-  padding: 30px;
+  padding: 0px;
 
 }
 
@@ -114,4 +114,10 @@ button:focus {outline:none; }
   grid-area:imageLikes;
   justify-self: end;
 
+}
+
+.image-page-image {
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
 }

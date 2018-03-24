@@ -2,8 +2,9 @@
     <div class='image-page-header'>
         <mat-card class="image-page-card">
             <div class='image-page-card-content'>
-                <div class='imageName'>Rain </div>
-                <div class='imageArtist'><a routerLink="/image/Ruby-Perez" routerLinkActive="active" class="card-link">Ruby Perez</a>
+                <div class='imageName'>Rain</div>
+                <div class='imageArtist'>
+                    <a routerLink="/image/Ruby-Perez" routerLinkActive="active" class="card-link">Ruby Perez</a>
                     <button mat-button color="primary">Follow</button>
                 </div>
                 <div class="imageActions">
@@ -21,6 +22,9 @@
                     </button>
                     <button mat-icon-button aria-pressed="false">
                         <img src='/assets/svg-material-icons/ic_add_shopping_cart_black_24px.svg'>
+                    </button>
+                    <button mat-button aria-pressed="false">
+                        NOT FOR SALE
                     </button>
                     <mat-divider [inset]="true"></mat-divider>
                 </div>
@@ -51,7 +55,7 @@
     <div class='image-page-image'>
         <mat-card class='image-page-card'>
             <mat-card-content>
-                <img src='../assets/images/imageOne.jpg' class='img-fluid'>
+                <img src='../assets/images/imageOne.jpg' class='img-fluid image-page-image '>
             </mat-card-content>
         </mat-card>
     </div>
