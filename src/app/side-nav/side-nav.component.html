@@ -3,6 +3,14 @@
     <mat-sidenav #sidenav mode="side" opened="true" class='sidenav'>
       <mat-list class="sidenav">
         <mat-list-item>
+            <button routerLink="/feed" routerLinkActive="active" mat-button class="navButton">
+              <img src='/assets/svg-material-icons/ic_brush_black_24px.svg' alt="Feed Icon">
+              <span class="navButtonText">
+                Art Feed
+              </span>
+            </button>
+          </mat-list-item>
+        <mat-list-item>
           <button routerLink="/originals" routerLinkActive="active" mat-button class="navButton">
             <img src='/assets/svg-material-icons/ic_brush_black_24px.svg' alt="Originals Icon">
             <span class="navButtonText">

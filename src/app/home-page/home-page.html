@@ -11,20 +11,45 @@
         </ngx-carousel>
     </div>
     <div class='featured'>
-        <div class="img-fluid" *ngFor="let original of originals">
-            <mat-card style='border-radius: 25px;'>
-                <mat-card-header>
-                    <mat-card-title>
-                        <a routerLink="/image/{{original.imageName}}/{{original.artistName}" routerLinkActive="active" class="card-link">{{original.imageName}}</a>
-                    </mat-card-title>
-                    <mat-card-subtitle>
-                        <a routerLink="/image/{{original.artistName}}" routerLinkActive="active" class="card-link">{{original.artistName}}</a>
-                    </mat-card-subtitle>
-                </mat-card-header>
-                <mat-card-content>
-                    <img class='img-fluid' src='{{original.imageSource}}'>
-                </mat-card-content>
-            </mat-card>
+        <div class='featured-products'>
+            <div class='featured-2d-creation'>
+                <mat-card class='image-page-card'>
+                    <mat-card-header>~ Artropy 2D ~</mat-card-header>
+                    <mat-card-content>
+                        Don't know where to start in your artistic career? Start drawing! Artropy offers a free 2D design and creation tool.
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class='featured-3d-creation'>
+                <mat-card class='image-page-card'>
+                    <mat-card-header> ~ Artropy 3D ~</mat-card-header>
+                    <mat-card-content>
+                        Drawing and painting not your thing? Artropy 3D takes your designs and shares it through out the world with our state of
+                        the art 3d printing warehouses and 3D design tools.
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+        <div class='community'>
+            <div class='featured-original'>
+                <mat-card class='image-page-card'>
+                    <mat-card-header>Featured 2D</mat-card-header>
+                    <mat-card-content>
+                        Drawing and painting not your thing? Artropy 3D takes your designs and shares it through out the world with our state of
+                        the art 3d printing warehouses and 3D design tools.
+                    </mat-card-content>
+                </mat-card>
+
+            </div>
+            <div class='featured-reimagination'>
+                <mat-card class='image-page-card'>
+                    <mat-card-header>Featured 3D</mat-card-header>
+                    <mat-card-content>
+                        Drawing and painting not your thing? Artropy 3D takes your designs and shares it through out the world with our state of
+                        the art 3d printing warehouses and 3D design tools.
+                    </mat-card-content>
+                </mat-card>
+            </div>
         </div>
     </div>
 </div>

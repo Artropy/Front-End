@@ -124,4 +124,5 @@ nav h1 {
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   align-items: stretch;
+  padding-top:40px;
 }

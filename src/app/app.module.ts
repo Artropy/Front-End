@@ -79,6 +79,7 @@ import { ArtistPageComponent } from './artist-page/artist-page.component';
 import { AssetImageCardComponent } from './asset-image-card/asset-image-card.component';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
+import { FeedPageComponent } from './feed-page/feed-page.component';
 
 
 
@@ -137,6 +138,7 @@ const appRoutes: Routes = [
     RelatedAssetsComponent,
     ArtistPageComponent,
     AssetImageCardComponent,
+    FeedPageComponent,
   ],
   imports: [
     BrowserModule,
