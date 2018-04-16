@@ -39,6 +39,15 @@ md-toolbar {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
+  .rightOptions > img {
+    float:left;
+
+  }
+
+  .sidenav{
+
+    background-color: white;
+  }
 button:focus {outline:0;}
 
 
@@ -89,15 +98,16 @@ button:focus {outline:0;}
 .leftNavigation button {
   width: 100%;
 
+  grid-template-columns: 200px 300px auto;
+  // grid-row-gap: 5px;
 
 }
 
 .header-container {
   display:grid;
-  grid-template-columns: 200px 300px auto;
-  // grid-row-gap: 5px;
   grid-template-rows: 100%;
   grid-template-areas: "leftHeader searchBar rightHeader";
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.3)
 }
 
 .header-left{
@@ -115,10 +125,10 @@ button:focus {outline:0;}
   box-sizing: border-box;
 }
 
-
 .searchBar{
   grid-area:searchBar;
 }
+
 .header-right{
   grid-area: rightHeader;
   align-self: end;
@@ -126,38 +136,27 @@ button:focus {outline:0;}
 
 .container-fluid {
   background-color:white;
-  }
-
-  .mat-toolbar > button{
-    background-color: #0ACBCB;
-  }
-
-  .mat-toolbar > button .loginButton{
-    color:white;
-  }
-
-.loginButton{
-color:white;
 }
 
-  .searchBox {
+.mat-toolbar > button{
+    background-color: #0ACBCB;
+}
+
+.mat-toolbar > button .loginButton{
+    color:white;
+}
+
+.loginButton{
+  color:white;
+}
+
+.searchBox {
     flex-grow: 3;
     flex-basis: 1000px;
     flex-shrink: inherit;
-  }
+}
 
-  .rightOptions > img {
-    float:left;
-
-  }
-
-  .sidenav{
-
-    background-color: white;
-  }
-
-
-  button > img {
+button > img {
     float:right;
     vertical-align:middle;
-  }
+}

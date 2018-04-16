@@ -1,41 +1,15 @@
-<h1>History</h1>
-<div class="row">
-  <div class="col-md-12">
-      <mat-card class="example-card">
-          <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Artist</mat-card-title>
-              <mat-card-subtitle>Studio</mat-card-subtitle>
-          </mat-card-header>
-
-          <mat-card-content>
-              <p>
-                  Studio Description
-              </p>
-          </mat-card-content>
-          <mat-card-actions>
-              
-              
-          </mat-card-actions>
-      </mat-card>
-  </div>
-  <div class="col-md-12">
-    <mat-card class="example-card">
-        <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Artist</mat-card-title>
-            <mat-card-subtitle>Studio</mat-card-subtitle>
-        </mat-card-header>
-
-        <mat-card-content>
-            <p>
-                Studio Description
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-            
-            
-        </mat-card-actions>
-    </mat-card>
+<h4>History</h4>
+<div class='history-header'>
+    <button class='artwork-filter' mat-button routerLink="/home" routerLinkActive="active">Artwork</button>
+    <button class='artist-filter' mat-button routerLink="/home" routerLinkActive="active">Artists</button>
+    <mat-form-field>
+            <input matInput >
+            <mat-datepicker-toggle matSuffix></mat-datepicker-toggle>
+            <mat-datepicker></mat-datepicker>
+    </mat-form-field>
 </div>
+<div class='history-page'>
+    <mat-card class="history-card">
+        
+    </mat-card>
 </div>
