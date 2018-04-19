@@ -20,7 +20,7 @@ export class LoginPageComponent implements OnInit {
       if (response.status === 'connected') {
         // the user is logged in and has authenticated your
         // app, and response.authResponse supplies
-        // the user's ID, a valid access token, a signed
+        // the user's ID, a valid access token, anosigned
         // request, and the time the access token 
         // and signed request each expire
         let uid = response.authResponse.userID;
