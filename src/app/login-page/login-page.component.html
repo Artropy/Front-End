@@ -5,7 +5,6 @@
   </div>
   <mat-tab-group class="loginSignin">
     <mat-tab label="Login" style='overflow:hidden;'>
-      <form class="loginForm">
         <mat-form-field class="loginInput">
             <span matPrefix><img src='/assets/svg-material-icons/ic_email_black_24px.svg' /> &nbsp;</span>
           <input matInput placeholder="Email" value="" type='text'>
@@ -15,12 +14,10 @@
           <input matInput placeholder="Password" value="" type='password'>
         </mat-form-field>
         <button mat-button class=""><img src='/assets/svg-material-icons/login.svg' />Login</button>
-        <button mat-button class="facebookButton"><img src='/assets/svg-material-icons/facebook.svg' /> Login with Facebook</button>
-        <button mat-button class="youtubeButton"><img src='/assets/svg-material-icons/YouTube.svg' /> Login with YouTube</button>
-      </form>
+        <button mat-button class="facebookButton" (click)="checkLoginState()"><img src='/assets/svg-material-icons/facebook.svg' /> Login with Facebook</button>
+        <!-- <button mat-button class="youtubeButton"><img src='/assets/svg-material-icons/YouTube.svg' /> Login with YouTube</button> -->
     </mat-tab>
     <mat-tab label="Signup" style='overflow:hidden;'>
-      <form class="loginForm">
         <mat-form-field class="loginInput">
             <span matPrefix><img src='/assets/svg-material-icons/ic_email_black_24px.svg' /></span>
           <input matInput placeholder="Email" value="" class="loginInput">
@@ -38,9 +35,8 @@
           <input matInput placeholder="Password Verify" value="" type='password'>
         </mat-form-field>
         <button mat-button class=""><img src='/assets/svg-material-icons/login.svg' />Sign Up</button>
-        <button mat-button class="facebookButton"> <img src='/assets/svg-material-icons/facebook.svg' /> Sign Up with Facebook</button>
-        <button mat-button class="youtubeButton"><img src='/assets/svg-material-icons/YouTube.svg' /> Sign Up with YouTube</button>
-      </form>
+        <button mat-button class="facebookButton" (click)="checkLoginState()"> <img src='/assets/svg-material-icons/facebook.svg' /> Sign Up with Facebook</button>
+        <!-- <button mat-button class="youtubeButton"><img src='/assets/svg-material-icons/YouTube.svg' /> Sign Up with YouTube</button> -->
     </mat-tab>
   </mat-tab-group>
 </div>

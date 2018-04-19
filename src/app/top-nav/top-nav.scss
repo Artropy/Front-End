@@ -6,10 +6,8 @@
   justify-content: space-around;
 }
 
-
 .header-container > img{
   color:white;
-
 }
 
 .button-login {
@@ -106,7 +104,8 @@ button:focus {outline:0;}
 .header-container {
   display:grid;
   grid-template-rows: 100%;
-  grid-template-areas: "leftHeader searchBar rightHeader";
+  grid-template-areas: "leftHeader searchBar right-header";
+  grid-template-columns: 200px auto auto;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.3)
 }
 
@@ -129,9 +128,9 @@ button:focus {outline:0;}
   grid-area:searchBar;
 }
 
-.header-right{
-  grid-area: rightHeader;
-  align-self: end;
+.right-header{
+  grid-area: right-header;
+  justify-self: end;
 }
 
 .container-fluid {

@@ -13,38 +13,13 @@
     background-color:white;
     width:100%;
     overflow-y: hidden; // hide vertical
-overflow-x: hidden; // hide horizontal
+    overflow-x: hidden; // hide horizontal
 }
 
 .leftNav{
     overflow-y: hidden; // hide vertical
-overflow-x: hidden; // hide horizontal
+    overflow-x: hidden; // hide horizontal
 }
-
-// .navButton {
-//     display: grid;
-//     background-color:white;
-//     color:rgb(75, 75, 75);
-//     width:100%;
-//     grid-template-columns: auto 50px;
-//     grid-template-rows: 100%;
-//     grid-template-areas: "navButtonText navButtonIcon";
-// }
-
-// .navButton:hover{
-//     background-color:#0ACBCB; 
-// }
-
-// .navButtonText{
-//     grid-area: navButtonText;
-//     justify-self: start;
-
-// }
-
-// .navButtonIcon{
-//     grid-area: navButtonIcon;
-//     justify-self: end; 
-// }
 
 .navButton {
     display: grid;
@@ -54,7 +29,6 @@ overflow-x: hidden; // hide horizontal
     display: flex !important; 
     flex-direction: row !important;
     flex-wrap: nowrap !important;
-    
 }
 
 .navButton:hover{

@@ -1,3 +1,5 @@
+@import '../assets/responsive-theme/artropy-main-theme.scss';
+
 button:focus {outline:none !important; }
   
 .image-page-card{
@@ -44,6 +46,7 @@ input:focus {
   }
   .item-footer {
     grid-area: footer;
+    background-color:$artropy-background-color;
   }
 
 .body{

@@ -1,3 +1,5 @@
+@import '../../assets/responsive-theme/artropy-main-theme.scss';
+
 .loginContainer{
   display:grid;
   grid-template-columns: 50% 60%;
@@ -29,8 +31,7 @@
 }
 
 .mat-ink-bar {
-
-  background-color:#0ACBCB !important;
+  background-color: $artropy-color-5 !important;
 }
 
 .youtubeButton{
