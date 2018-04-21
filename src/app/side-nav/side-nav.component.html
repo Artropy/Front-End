@@ -3,13 +3,14 @@
     <mat-sidenav #sidenav mode="side" opened="true" class='sidenav'>
       <mat-list class="sidenav">
         <mat-list-item>
-            <button routerLink="/feed" routerLinkActive="active" mat-button class="navButton">
-              <img src='/assets/svg-material-icons/rss.svg' alt="Feed Icon">
-              <span class="navButtonText">
-                Art Feed
-              </span>
-            </button>
-          </mat-list-item>
+          <button routerLink="/feed" routerLinkActive="active" mat-button class="navButton" [ngClass]="{
+              'is-active': artFeed}" (click)="activateRoute(artFeed)">
+            <img src='/assets/svg-material-icons/rss.svg' alt="Feed Icon">
+            <span class="navButtonText">
+              Art Feed
+            </span>
+          </button>
+        </mat-list-item>
         <mat-list-item>
           <button routerLink="/originals" routerLinkActive="active" mat-button class="navButton">
             <img src='/assets/svg-material-icons/ic_brush_black_24px.svg' alt="Originals Icon">
@@ -19,19 +20,18 @@
           </button>
         </mat-list-item>
         <mat-list-item>
-          <button routerLink="/studios" routerLinkActive="active" mat-button class="navButton">
-            <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'>
+          <button routerLink="/reimaginations" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_autorenew_black_24px.svg'>
             <span class="navButtonText">
-              Studios
+              Re-imaginations
             </span>
           </button>
         </mat-list-item>
         <mat-list-item>
-          <button routerLink="/reimaginations" routerLinkActive="active" mat-button class="navButton">
-            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_autorenew_black_24px.svg'>
+          <button routerLink="/studios" routerLinkActive="active" mat-button class="navButton">
+            <img src='/assets/svg-material-icons/ic_payment_black_24px.svg'>
             <span class="navButtonText">
-
-              Re-imaginations
+              Studios
             </span>
           </button>
         </mat-list-item>
@@ -61,7 +61,6 @@
         </mat-list-item> -->
         <mat-list-item>
           <button routerLink="/history" routerLinkActive="active" mat-button class="navButton">
-
             <img class="navButtonIcon" src='/assets/svg-material-icons/ic_history_black_24px.svg'>
             <span class="navButtonText"> History
             </span>
@@ -84,13 +83,21 @@
           </button>
         </mat-list-item>
         <mat-list-item>
-            <button routerLink="/followers" routerLinkActive="active" mat-button class="navButton">
-              <img class="navButtonIcon" src='/assets/svg-material-icons/ic_people_black_24px.svg'>
-              <span class="navButtonText">
-                Followers
-              </span>
-            </button>
-          </mat-list-item>
+          <button routerLink="/followers" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_people_black_24px.svg'>
+            <span class="navButtonText">
+              Followers
+            </span>
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button routerLink="/genres" routerLinkActive="active" mat-button class="navButton">
+            <img class="navButtonIcon" src='/assets/svg-material-icons/ic_event_black_24px.svg'>
+            <span class="navButtonText">
+              Genres
+            </span>
+          </button>
+        </mat-list-item>
         <mat-list-item>
           <button routerLink="/events" routerLinkActive="active" mat-button class="navButton">
             <img class="navButtonIcon" src='/assets/svg-material-icons/ic_event_black_24px.svg'>
@@ -99,14 +106,14 @@
             </span>
           </button>
         </mat-list-item>
-        <mat-list-item>
+        <!-- <mat-list-item>
           <button routerLink="/videos" routerLinkActive="active" mat-button class="navButton">
             <img class="navButtonIcon" src='/assets/svg-material-icons/ic_video_library_black_24px.svg'>
             <span class="navButtonText">
               Videos
             </span>
           </button>
-        </mat-list-item>
+        </mat-list-item> -->
         <!-- <mat-list-item>
           <button routerLink="/live" routerLinkActive="active" mat-button class="navButton">
             <img class="navButtonIcon" src='/assets/svg-material-icons/ic_payment_black_24px.svg'>

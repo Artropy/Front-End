@@ -22,4 +22,11 @@ describe('SideNavComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should change the button color on click') , () =>{
+
+  }
+
+
+
 });

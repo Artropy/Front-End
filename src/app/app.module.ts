@@ -100,6 +100,7 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'cart', component: CartPageComponent },
   { path: 'sponsers', component: SponsersPageComponent },
+  { path: 'feed', component: FeedPageComponent },
   { path: 'followed', component: FollowedPageComponent },
   { path: 'followers', component: FollowedPageComponent },
   { path: 'search', component: SearchPageComponent },

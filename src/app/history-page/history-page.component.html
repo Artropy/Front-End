@@ -1,15 +1,17 @@
-<h4>History</h4>
 <div class='history-header'>
-    <button class='artwork-filter' mat-button routerLink="/home" routerLinkActive="active">Artwork</button>
-    <button class='artist-filter' mat-button routerLink="/home" routerLinkActive="active">Artists</button>
-    <mat-form-field>
-            <input matInput >
-            <mat-datepicker-toggle matSuffix></mat-datepicker-toggle>
-            <mat-datepicker></mat-datepicker>
+    <button class='artwork-filter' mat-raised-button routerLink="/history-artwork" routerLinkActive="active">Artwork</button>
+    <button class='artist-filter' mat-raised-button routerLink="/history-artists" routerLinkActive="active">Artists</button>
+    <button mat-raised-button color="warn" routerLink="/history-search">Search History</button>
+    <button mat-raised-button routerLink="/history-comments">Comments</button>
+</div>
+<hr class='artropy-hr'>
+<div class='history-options-container'>
+    <button mat-raised-button color="warn">Clear History</button>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Search" value="">
+        <mat-icon matSuffix></mat-icon>
     </mat-form-field>
 </div>
 <div class='history-page'>
-    <mat-card class="history-card">
-        
-    </mat-card>
+    <mat-card class="history-card"></mat-card>
 </div>

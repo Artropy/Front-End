@@ -1,41 +1,40 @@
-<h1>Trending</h1>
-<div class="row">
-  <div class="col-md-12">
-      <mat-card class="example-card">
-          <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Artist</mat-card-title>
-              <mat-card-subtitle>Studio</mat-card-subtitle>
-          </mat-card-header>
-
-          <mat-card-content>
-              <p>
-                  Studio Description
-              </p>
-          </mat-card-content>
-          <mat-card-actions>
-              
-              
-          </mat-card-actions>
-      </mat-card>
-  </div>
-  <div class="col-md-12">
-    <mat-card class="example-card">
-        <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Artist</mat-card-title>
-            <mat-card-subtitle>Studio</mat-card-subtitle>
-        </mat-card-header>
-
-        <mat-card-content>
-            <p>
-                Studio Description
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-            
-            
-        </mat-card-actions>
-    </mat-card>
+<div>
+    <button class='artwork-filter' mat-raised-button routerLink="/history-artwork" routerLinkActive="active">Today</button>
+    <button class='artist-filter' mat-raised-button routerLink="/history-artists" routerLinkActive="active">Week</button>
+    <button mat-raised-button color="warn" routerLink="/history-search">Month</button>
 </div>
+<hr class='artropy-hr'>
+<div class="row">
+    <div class="col-md-12">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Artist</mat-card-title>
+                <mat-card-subtitle>Studio</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    Studio Description
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div class="col-md-12">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Artist</mat-card-title>
+                <mat-card-subtitle>Studio</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    Studio Description
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+            </mat-card-actions>
+        </mat-card>
+    </div>
 </div>
