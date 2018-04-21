@@ -6,3 +6,22 @@ hr.artropy-hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $artropy-primary-color, rgba(0, 0, 0, 0));
 }
 
+.feed-page{
+    display:grid;
+    justify-content: stretch;	
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    align-items: stretch;
+    grid-template-areas: "feed-content feed-advertisment";
+}
+
+.feed-content{
+    grid-area: feed-content;
+    
+}
+
+.feed-advertisment{
+    grid-area: feed-advertisment;
+}

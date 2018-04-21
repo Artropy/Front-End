@@ -31,6 +31,11 @@ import { MatTooltipModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material/select';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatTableModule } from '@angular/material/table';
+
+import {Component, ViewChild} from '@angular/core';
+import {MatPaginatorModule, MatSortModule} from '@angular/material';
+
 
 
 
@@ -154,6 +159,8 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatExpansionModule,
     MatListModule,
+    MatSortModule,
+    MatPaginatorModule,
     HttpClientModule,
     HttpModule,
     RouterModule.forRoot(
@@ -168,6 +175,7 @@ const appRoutes: Routes = [
     MatSelectModule,
     MatProgressBarModule,
     NgxCarouselModule,
+    MatTableModule,
     environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
   providers: [OriginalsService,    MockBackend,
