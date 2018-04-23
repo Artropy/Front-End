@@ -1,0 +1,10 @@
+.liked-page{
+    display: grid;
+    justify-content: stretch;	
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    align-items: stretch;
+    grid-template-areas: "liked-item"
+}
