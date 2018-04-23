@@ -1,7 +1,7 @@
 <div class='grid-originals'>
     <div class='grid-originals-results'>
         <div class="img-fluid" *ngFor="let original of originals">
-            <mat-card style='border-radius: 25px;'>
+            <mat-card>
                 <mat-card-header>
                     <mat-card-title>
                         <a routerLink="/image/{{original.imageName}}/{{original.artistName}" routerLinkActive="active" class="card-link">{{original.imageName}}</a>
@@ -11,7 +11,7 @@
                     </mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
-                    <img class='img-fluid original-card-image' src='{{original.imageSource}}'>
+                    <img class='img-fluid' src='{{original.imageSource}}'>
                 </mat-card-content>
             </mat-card>
         </div>
