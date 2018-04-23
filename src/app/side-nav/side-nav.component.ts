@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -32,6 +32,10 @@ export class SideNavComponent implements OnInit {
    "genres" : false,
    "events" : false,
   }
+
+
+
+
 
   constructor() { }
 

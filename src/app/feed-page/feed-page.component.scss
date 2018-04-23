@@ -22,6 +22,42 @@ hr.artropy-hr {
     
 }
 
+
+.feed-post{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    margin:15px;
+}
+
 .feed-advertisment{
+    display:grid;
     grid-area: feed-advertisment;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "feed-advertisment-description"
+    "feed-advertisment-sponser"
+    "feed-advertisment-related";
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+
+}
+
+.feed-advertisment-description{
+    grid-area: feed-advertisment-description;
+
+}
+
+.feed-advertisment-sponser{
+    grid-area: feed-advertisment-sponser;
+}
+
+.feed-advertisment-related{
+    grid-area: feed-advertisment-related;
+}
+
+.feed-card{
+    height:100%;
 }
