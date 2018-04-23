@@ -1,7 +1,7 @@
 .reimagination-page{
     display: grid;
     justify-content: stretch;	
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     grid-template-rows: auto;
     grid-row-gap: 15px;
     grid-column-gap: 15px;
@@ -11,6 +11,9 @@
 .reimagination-card{
     // margin:15px !important;
     padding:15px !important;
+}
+.fill-card{
+  object-fit: fill;
 }
 
 .reimagination-card-content{
@@ -133,6 +136,7 @@
     box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
     border-radius: 999px;
     left: 0;
+    opacity: 0.1;
   }
   
   .rightRs {
@@ -145,4 +149,5 @@
     box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
     border-radius: 999px;
     right: 0;
+    opacity: 0.1;
   }
