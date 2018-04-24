@@ -5,33 +5,36 @@
         display: grid;
         justify-content: stretch;	
         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-        grid-template-rows: auto;
+        grid-template-rows: 400px;
         grid-row-gap: 15px;
         grid-column-gap: 15px;
         align-items: stretch;
     }
 }
 
-@media (min-width: 500px) {
-    .grid-originals-featured {
-        display: grid;
-        justify-content: stretch;	
-        grid-template-columns: 100%;
-        grid-template-rows: 200px;
-        grid-row-gap: 15px;
-        grid-column-gap: 15px;
-        align-items: stretch;
-    }
-}
+
 
 .mat-card{
-    padding: 10px !important;
+    padding: 0px 0px 0px 0px !important;
     height:100%;
-    border-radius: 25px;
+    display:grid;
+    grid-template-areas: "original-image"
+    "original-info";
+    grid-template-rows: 85% 15%;
+
 }
 
 .original-card{
     object-fit: cover !important;
     height:100%;
     width:100%;
+}
+
+.original-card:hover { 
+    transform: scale(1.01); 
+}
+
+.mat-card-content{
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
 }

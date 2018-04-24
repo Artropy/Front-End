@@ -12,25 +12,7 @@ import { ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 })
 export class ArtropyTopNavComponent {
 
- // @ViewChild('sidenav') myLeftSideNav: SideNavComponent;
-
-  navOpen() {
-    this.myLeftSideNav.emit(true);
-  }
 
 
-  OnInit() {
 
-  }
-
-  ngAfterViewInit() {
-    // child is set
-  }
-
-  closeLeftSideNav(){
-    this.myLeftSideNav.toggle();
-  }
-
-
-  
 }

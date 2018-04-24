@@ -13,7 +13,7 @@ export class OriginalsPageComponent implements OnInit {
       artistName: "Stephen Moreira",
       imageSource: "../assets/images/imageOne.jpg"
     },
-    {     
+    {
       imageName: "Spring",
       artistName: "Ruby Perez",
       imageSource: "../assets/images/imageTwo.jpg"
@@ -33,7 +33,7 @@ export class OriginalsPageComponent implements OnInit {
       artistName: "Stephen Moreira",
       imageSource: "../assets/images/imageOne.jpg"
     },
-    {     
+    {
       imageName: "Spring",
       artistName: "Ruby Perez",
       imageSource: "../assets/images/imageTwo.jpg"
@@ -53,7 +53,7 @@ export class OriginalsPageComponent implements OnInit {
       artistName: "Stephen Moreira",
       imageSource: "../assets/images/imageOne.jpg"
     },
-    {     
+    {
       imageName: "Spring",
       artistName: "Ruby Perez",
       imageSource: "../assets/images/imageTwo.jpg"
@@ -70,15 +70,23 @@ export class OriginalsPageComponent implements OnInit {
     }
   ];
 
-  
+
 
   constructor() { }
 
   ngOnInit() {
-   // this.getOriginals();
+    // this.getOriginals();
   }
 
 
-    // NOTE: One Click tooltip note
+  originalMouseEnter() {
+    console.log('mouse Enter :');
+  }
+
+  originalMouseLeave(div: string , value) {
+    console.log('mouse leave :');
+  }
+
+  // NOTE: One Click tooltip note
 
 }
