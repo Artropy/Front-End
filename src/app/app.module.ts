@@ -87,6 +87,7 @@ import { AssetImageCardComponent } from './asset-image-card/asset-image-card.com
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 import { FeedPageComponent } from './feed-page/feed-page.component';
+import { GenresPageComponent } from './genres-page/genres-page.component';
 
 
 
@@ -110,6 +111,7 @@ const appRoutes: Routes = [
   { path: 'followers', component: FollowedPageComponent },
   { path: 'search', component: SearchPageComponent },
   { path: 'upload', component: UploadPageComponent },
+  { path: 'genres', component: GenresPageComponent },
   { path: 'image/:artist/:imageName', component: ImagePageComponent },
   { path: 'image/:artist', component: ArtistPageComponent },
   { path: '**', component: Http404PageComponent },
@@ -147,6 +149,7 @@ const appRoutes: Routes = [
     ArtistPageComponent,
     AssetImageCardComponent,
     FeedPageComponent,
+    GenresPageComponent,
   ],
   imports: [
     BrowserModule,

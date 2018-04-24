@@ -19,7 +19,6 @@ hr.artropy-hr {
 
 .feed-content{
     grid-area: feed-content;
-    
 }
 
 
@@ -60,4 +59,9 @@ hr.artropy-hr {
 
 .feed-card{
     height:100%;
+}
+
+.reimagination-image{
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
 }
