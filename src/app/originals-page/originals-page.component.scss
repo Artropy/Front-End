@@ -1,18 +1,14 @@
 @import '../../assets/responsive-theme/artropy-main-theme.scss';
 
-@media (min-width: 500px) {
-    .grid-originals-results {
-        display: grid;
-        justify-content: stretch;	
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-        grid-template-rows: 300px;
-        grid-row-gap: 15px;
-        grid-column-gap: 15px;
-        align-items: stretch;
-    }
+.grid-originals-results {
+    display: grid;
+    justify-content: stretch;	
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-rows: 300px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    align-items: stretch;
 }
-
-
 
 .mat-card{
     padding: 0px 0px 0px 0px !important;

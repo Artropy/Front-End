@@ -1,0 +1,10 @@
+@import '../../assets/responsive-theme/artropy-main-theme.scss';
+
+.artist-page{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "headBanner"
+    "featured";
+}
