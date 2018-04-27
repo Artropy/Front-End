@@ -88,6 +88,7 @@ import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 import { FeedPageComponent } from './feed-page/feed-page.component';
 import { GenresPageComponent } from './genres-page/genres-page.component';
+import { ArtropyCarouselComponent } from './artropy-carousel/artropy-carousel.component';
 
 
 
@@ -150,6 +151,7 @@ const appRoutes: Routes = [
     AssetImageCardComponent,
     FeedPageComponent,
     GenresPageComponent,
+    ArtropyCarouselComponent,
   ],
   imports: [
     BrowserModule,

@@ -34,3 +34,11 @@
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
 }
+
+.original-image{
+    grid-area: original-image;
+}
+
+.original-info {
+    grid-area: original-info;
+}

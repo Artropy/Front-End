@@ -1,0 +1,9 @@
+<ngx-carousel [inputs]="carouselOne" (carouselLoad)="myfunc($event)" class="banner">
+    <ngx-item NgxCarouselItem *ngFor="let original of originals let i = index;">
+        <div style="background: no-repeat fixed center url('../assets/images/imageOne.jpg');" class="bannerStyle">
+            <h1>{{i}}</h1>
+        </div>
+    </ngx-item>
+    <button NgxCarouselPrev class='leftRs'>&lt;</button>
+    <button NgxCarouselNext class='rightRs'>&gt;</button>
+</ngx-carousel>
