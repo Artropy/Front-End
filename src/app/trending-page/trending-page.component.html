@@ -1,39 +1,11 @@
 <div>
-    <button class='artwork-filter' mat-raised-button routerLinkActive="active">Today</button>
-    <button class='artist-filter' mat-raised-button  routerLinkActive="active">Week</button>
-    <button mat-raised-button color="warn">Month</button>
-    |
-    <button mat-raised-button color="warn">Views</button>
-    <button mat-raised-button color="warn">Likes</button>
+    <button class='artwork-filter' mat-raised-button routerLinkActive="active" routerLink="/today">Today</button>
+    <button class='artist-filter' mat-raised-button  routerLinkActive="active" routerLink="/week">Week</button>
+    <button mat-raised-button routerLink="/month">Month</button>
+    <button mat-raised-button routerLink="/views">Views</button>
+    <button mat-raised-button routerLink="/likes">Likes</button>
 </div>
 <hr class='artropy-hr'>
 <div class="trending-page">
-    <mat-card class="example-card">
-        <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Artist</mat-card-title>
-            <mat-card-subtitle>Studio</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-            <p>
-                Studio Description
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-        </mat-card-actions>
-    </mat-card>
-    <mat-card class="example-card">
-        <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Artist</mat-card-title>
-            <mat-card-subtitle>Studio</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-            <p>
-                Studio Description
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-        </mat-card-actions>
-    </mat-card>
+    <router-outlet></router-outlet>
 </div>

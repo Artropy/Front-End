@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MockBackend } from '@angular/http/testing'; // <-- for dev enviroment only
-import {BaseRequestOptions, Http} from '@angular/http';
+import { BaseRequestOptions, Http } from '@angular/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -32,9 +32,11 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
-import {Component, ViewChild} from '@angular/core';
-import {MatPaginatorModule, MatSortModule} from '@angular/material';
+
+import { Component, ViewChild } from '@angular/core';
+import { MatPaginatorModule, MatSortModule } from '@angular/material';
 
 
 
@@ -76,7 +78,6 @@ import { UploadPageComponent } from './upload-page/upload-page.component';
 // // GraphQL
 // import * as graphql from 'graphql';
 
-import { OriginalsService } from './originals.service';
 import { BottomFooterComponent } from './bottom-footer/bottom-footer.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { FooterComponent } from './footer/footer.component';
@@ -89,6 +90,9 @@ import 'hammerjs';
 import { FeedPageComponent } from './feed-page/feed-page.component';
 import { GenresPageComponent } from './genres-page/genres-page.component';
 import { ArtropyCarouselComponent } from './artropy-carousel/artropy-carousel.component';
+import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { ExplorePageComponent } from './explore-page/explore-page.component';
+import { AuthGuard } from './auth/guards/auth.guard';
 
 
 
@@ -101,18 +105,33 @@ const appRoutes: Routes = [
   { path: 'masterworks', component: MasterworksPageComponent },
   { path: 'shop', component: ShopPageComponent },
   { path: 'liked', component: LikedPageComponent },
-  { path: 'history', component: HistoryPageComponent },
+  {
+    path: 'history', component: HistoryPageComponent,
+    children: [
+      { path: 'history/search', component: HistoryPageComponent },
+      { path: 'history/artists', component: HistoryPageComponent },
+      { path: 'history/images', component: HistoryPageComponent },
+      { path: 'history/donations', component: HistoryPageComponent },
+      { path: 'history/purchases', component: HistoryPageComponent }]
+  },
   { path: 'following', component: FollowingPageComponent },
   { path: 'reimaginations', component: ReimaginationsPageComponent },
-  { path: 'login', component: LoginPageComponent },
+  {
+    path: 'login', component: LoginPageComponent
+  },
   { path: 'cart', component: CartPageComponent },
   { path: 'sponsers', component: SponsersPageComponent },
-  { path: 'feed', component: FeedPageComponent },
+  {
+    path: 'feed', component: FeedPageComponent,
+    children: [
+      { path: 'explore', component: ExplorePageComponent }]
+  },
   { path: 'followed', component: FollowedPageComponent },
   { path: 'followers', component: FollowedPageComponent },
   { path: 'search', component: SearchPageComponent },
   { path: 'upload', component: UploadPageComponent },
   { path: 'genres', component: GenresPageComponent },
+  { path: 'dashboard', component: DashboardPageComponent },
   { path: 'image/:artist/:imageName', component: ImagePageComponent },
   { path: 'image/:artist', component: ArtistPageComponent },
   { path: '**', component: Http404PageComponent },
@@ -152,6 +171,8 @@ const appRoutes: Routes = [
     FeedPageComponent,
     GenresPageComponent,
     ArtropyCarouselComponent,
+    DashboardPageComponent,
+    ExplorePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -181,14 +202,11 @@ const appRoutes: Routes = [
     MatProgressBarModule,
     NgxCarouselModule,
     MatTableModule,
+    MatProgressSpinnerModule,
     environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
-  providers: [OriginalsService,    MockBackend,
-    BaseRequestOptions, {
-      provide: Http,
-      deps: [MockBackend, BaseRequestOptions],
-      useFactory: (backend: MockBackend, options: BaseRequestOptions) => { return new Http(backend, options); }
-  }],
+  providers: [
+  ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

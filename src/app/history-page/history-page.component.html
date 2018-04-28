@@ -1,8 +1,10 @@
 <div class='history-header'>
-    <button class='artwork-filter' mat-raised-button routerLink="/history-artwork" routerLinkActive="active">Artwork</button>
-    <button class='artist-filter' mat-raised-button routerLink="/history-artists" routerLinkActive="active">Artists</button>
-    <button mat-raised-button color="warn" routerLink="/history-search">Search History</button>
-    <button mat-raised-button routerLink="/history-comments">Comments</button>
+    <button class='artwork-filter' mat-raised-button routerLink="artwork" routerLinkActive="active">Artwork</button>
+    <button class='artist-filter' mat-raised-button routerLink="artists" routerLinkActive="active">Artists</button>
+    <button mat-raised-button routerLink="search">Search History</button>
+    <button mat-raised-button routerLink="donation">Donations</button>
+    <button mat-raised-button routerLink="purchases">Purchases</button>
+    <button mat-raised-button routerLink="comments">Comments</button>
 </div>
 <hr class='artropy-hr'>
 <div class='history-options-container'>
@@ -12,6 +14,7 @@
         <mat-icon matSuffix></mat-icon>
     </mat-form-field>
 </div>
+<router-outlet></router-outlet>
 <div class='history-page'>
     <mat-card class="history-card"></mat-card>
 </div>
