@@ -44,27 +44,27 @@ import { MatPaginatorModule, MatSortModule } from '@angular/material';
 
 // Artropy custom components
 import { AppComponent } from './app.component';
-import { ArtropyTopNavComponent } from './top-nav/top-nav.component';
-import { ArtropyHomePageComponent } from './home-page/home-page.component';
-import { OriginalsPageComponent } from './originals-page/originals-page.component';
-import { StudiosPageComponent } from './studios-page/studios-page.component';
-import { TrendingPageComponent } from './trending-page/trending-page.component';
-import { MasterworksPageComponent } from './masterworks-page/masterworks-page.component';
-import { ShopPageComponent } from './shop-page/shop-page.component';
-import { LikedPageComponent } from './liked-page/liked-page.component';
-import { HistoryPageComponent } from './history-page/history-page.component';
-import { FollowingPageComponent } from './following-page/following-page.component';
-import { ReimaginationsPageComponent } from './reimaginations-page/reimaginations-page.component';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { CartPageComponent } from './cart-page/cart-page.component';
-import { SponsersPageComponent } from './sponsers-page/sponsers-page.component';
-import { FollowedPageComponent } from './followed-page/followed-page.component';
-import { SearchPageComponent } from './search-page/search-page.component';
-import { VideosPageComponent } from './videos-page/videos-page.component';
-import { LivePageComponent } from './live-page/live-page.component';
-import { ImagePageComponent } from './image-page/image-page.component';
-import { Http404PageComponent } from './http404-page/http404-page.component';
-import { UploadPageComponent } from './upload-page/upload-page.component';
+import { ArtropyTopNavComponent } from './components/top-nav/top-nav.component';
+import { ArtropyHomePageComponent } from './components/home-page/home-page.component';
+import { OriginalsPageComponent } from './components/originals-page/originals-page.component';
+import { StudiosPageComponent } from './components/studios-page/studios-page.component';
+import { TrendingPageComponent } from './components/trending-page/trending-page.component';
+import { MasterworksPageComponent } from './components/masterworks-page/masterworks-page.component';
+import { ShopPageComponent } from './components/shop-page/shop-page.component';
+import { LikedPageComponent } from './components/liked-page/liked-page.component';
+import { HistoryPageComponent } from './components/history-page/history-page.component';
+import { FollowingPageComponent } from './components/following-page/following-page.component';
+import { ReimaginationsPageComponent } from './components/reimaginations-page/reimaginations-page.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { CartPageComponent } from './components/cart-page/cart-page.component';
+import { SponsersPageComponent } from './components/sponsers-page/sponsers-page.component';
+import { FollowedPageComponent } from './components/followed-page/followed-page.component';
+import { SearchPageComponent } from './components/search-page/search-page.component';
+import { VideosPageComponent } from './components/videos-page/videos-page.component';
+import { LivePageComponent } from './components/live-page/live-page.component';
+import { ImagePageComponent } from './components/image-page/image-page.component';
+import { Http404PageComponent } from './components/http404-page/http404-page.component';
+import { UploadPageComponent } from './components/upload-page/upload-page.component';
 
 // Other libraries
 
@@ -78,20 +78,20 @@ import { UploadPageComponent } from './upload-page/upload-page.component';
 // // GraphQL
 // import * as graphql from 'graphql';
 
-import { BottomFooterComponent } from './bottom-footer/bottom-footer.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
-import { FooterComponent } from './footer/footer.component';
-import { AssetCommentsComponent } from './asset-comments/asset-comments.component';
-import { RelatedAssetsComponent } from './related-assets/related-assets.component';
-import { ArtistPageComponent } from './artist-page/artist-page.component';
-import { AssetImageCardComponent } from './asset-image-card/asset-image-card.component';
+import { BottomFooterComponent } from './components/bottom-footer/bottom-footer.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AssetCommentsComponent } from './components/asset-comments/asset-comments.component';
+import { RelatedAssetsComponent } from './components/related-assets/related-assets.component';
+import { ArtistPageComponent } from './components/artist-page/artist-page.component';
+import { AssetImageCardComponent } from './components/asset-image-card/asset-image-card.component';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
-import { FeedPageComponent } from './feed-page/feed-page.component';
-import { GenresPageComponent } from './genres-page/genres-page.component';
-import { ArtropyCarouselComponent } from './artropy-carousel/artropy-carousel.component';
-import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
-import { ExplorePageComponent } from './explore-page/explore-page.component';
+import { FeedPageComponent } from './components/feed-page/feed-page.component';
+import { GenresPageComponent } from './components/genres-page/genres-page.component';
+import { ArtropyCarouselComponent } from './components/artropy-carousel/artropy-carousel.component';
+import { DashboardPageComponent } from './components/dashboard-page/dashboard-page.component';
+import { ExplorePageComponent } from './components/explore-page/explore-page.component';
 import { AuthGuard } from './auth/guards/auth.guard';
 
 
