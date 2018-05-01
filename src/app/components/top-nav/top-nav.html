@@ -3,7 +3,9 @@
       <button mat-icon-button  id=menu_example aria-pressed="false" (click)="closeLeftSideNav()">
         <img src='/assets/svg-material-icons/ic_menu_black_24px.svg'>
       </button>
-      <button class='logo' mat-button routerLink="/home" routerLinkActive="active">Artropy</button>
+      <button mat-icon-button  class='logo' mat-button routerLink="/home" routerLinkActive="active">
+          <img src="assets/svg-material-icons/angular.svg">
+        </button>
     </div>
     <div class='searchBar'>
       <div >
@@ -11,10 +13,10 @@
       </div>
     </div>
     <div class='right-header'>
-      <button mat-icon-button  aria-pressed="false"  routerLink="/dashboard">
+      <button mat-icon-button  aria-pressed="false"  routerLink="/dashboard" class="dashboard-button">
         <img src='/assets/svg-material-icons/view-dashboard.svg'>
       </button>
-      <button mat-icon-button  aria-pressed="false"  routerLink="/upload">
+      <button mat-icon-button  aria-pressed="false"  routerLink="/upload" class="upload-button">
         <img src='/assets/svg-material-icons/upload.svg'>
       </button>
       <button mat-button class="button-login" routerLink="/login" routerLinkActive="active" class="loginButton">LOG IN</button>

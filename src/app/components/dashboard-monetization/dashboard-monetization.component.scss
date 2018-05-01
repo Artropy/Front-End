@@ -1,0 +1,26 @@
+.dashboard-monetization{
+    display: grid;
+    justify-content: stretch;	
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    align-items: stretch;
+    padding-top:40px;
+    grid-template-areas: "today-monetization" 
+    "overall-monetization";
+  }
+  
+  .today-monetization{
+    grid-area:today-monetization;
+  }
+
+  .overall-monetization{
+    grid-area: overall-monetization;
+  }
+  
+
+  .monetization-card{
+    margin: 0px !important;
+    padding: 0px !important;
+  }

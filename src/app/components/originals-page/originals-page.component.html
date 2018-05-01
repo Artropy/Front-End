@@ -2,13 +2,14 @@
   <div class='grid-originals-results'>
     <div class="img-fluid original-card" *ngFor="let original of originals" (mouseenter)="originalMouseEnter(100,value)" (mouseleave)="originalMouseLeave(0,value)">
       <mat-card>
-        <mat-card-content class="original-image"></mat-card-content>
+        <mat-card-content routerLink="/image/{{original.imageName}}/{{original.artistName}" routerLinkActive="active" class="original-image" [ngStyle]="setBackgroundImage(original.imageSource)"></mat-card-content>
         <mat-card-header class="original-info">
             <mat-card-title>
               <a routerLink="/image/{{original.imageName}}/{{original.artistName}" routerLinkActive="active" class="card-link">{{original.imageName}}</a>
             </mat-card-title>
             <mat-card-subtitle>
               <a routerLink="/image/{{original.artistName}}" routerLinkActive="active" class="card-link">{{original.artistName}}</a>
+              <span class="flag-icon flag-icon-gr"></span>
             </mat-card-subtitle>
         </mat-card-header>
       </mat-card>

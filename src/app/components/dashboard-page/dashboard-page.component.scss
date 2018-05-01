@@ -1,0 +1,49 @@
+@import '../../../assets/responsive-theme/artropy-main-theme.scss';
+
+.dashboard-page {
+    display: grid;
+    justify-content: stretch;	
+    grid-template-rows: 50px 100px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    align-items: stretch;
+    grid-template-areas: "dashboard-navagation-header"
+    "dashboard-general-analytics-card";
+    grid-template-columns: 100%;
+
+}
+
+.dashboard-navagation-header{
+    // margin: $artropy-margin;
+    // padding: $artropy-padding;
+    grid-area: dashboard-navagation-header;
+}
+
+.dashboard-general-analytics-card{
+    // margin: $artropy-margin;
+    // padding: $artropy-padding;
+    grid-area: dashboard-general-analytics-card;
+}
+
+
+// .dashboard-views-chart{
+//     margin: $artropy-margin;
+//     padding: $artropy-padding;
+//     grid-area: dashboard-view-chart;
+// }
+
+// .dashboard-likes-chart{
+//     margin: $artropy-margin;
+//     padding: $artropy-padding;
+//     grid-area: dashboard-likes-chart;
+// }
+
+// .dashboard-sponsers-chart{
+//     margin: $artropy-margin;
+//     padding: $artropy-padding;
+//     grid-area: dashboard-sponsers-chart;
+// }
+
+
+
+

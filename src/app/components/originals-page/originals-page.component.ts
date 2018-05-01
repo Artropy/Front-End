@@ -11,62 +11,62 @@ export class OriginalsPageComponent implements OnInit {
     {
       imageName: "Rain",
       artistName: "Stephen Moreira",
-      imageSource: "../assets/images/imageOne.jpg"
+      imageSource: "assets/images/imageOne.jpg"
     },
     {
       imageName: "Spring",
       artistName: "Ruby Perez",
-      imageSource: "../assets/images/imageTwo.jpg"
+      imageSource: "assets/images/imageTwo.jpg"
     },
     {
       imageName: "Colors",
       artistName: "Kevin Marsh",
-      imageSource: "../assets/images/imageThree.jpg"
+      imageSource: "assets/images/imageThree.jpg"
     },
     {
       imageName: "Stars",
       artistName: "Rodrigo Zuniga",
-      imageSource: "../assets/images/imageFour.jpg"
+      imageSource: "assets/images/imageFour.jpg"
     },
     {
       imageName: "Rain",
       artistName: "Stephen Moreira",
-      imageSource: "../assets/images/imageOne.jpg"
+      imageSource: "assets/images/imageOne.jpg"
     },
     {
       imageName: "Spring",
       artistName: "Ruby Perez",
-      imageSource: "../assets/images/imageTwo.jpg"
+      imageSource: "assets/images/imageTwo.jpg"
     },
     {
       imageName: "Colors",
       artistName: "Kevin Marsh",
-      imageSource: "../assets/images/imageThree.jpg"
+      imageSource: "assets/images/imageThree.jpg"
     },
     {
       imageName: "Stars",
       artistName: "Rodrigo Zuniga",
-      imageSource: "../assets/images/imageFour.jpg"
+      imageSource: "assets/images/imageFour.jpg"
     },
     {
       imageName: "Rain",
       artistName: "Stephen Moreira",
-      imageSource: "../assets/images/imageOne.jpg"
+      imageSource: "assets/images/imageOne.jpg"
     },
     {
       imageName: "Spring",
       artistName: "Ruby Perez",
-      imageSource: "../assets/images/imageTwo.jpg"
+      imageSource: "assets/images/imageTwo.jpg"
     },
     {
       imageName: "Colors",
       artistName: "Kevin Marsh",
-      imageSource: "../assets/images/imageThree.jpg"
+      imageSource: "assets/images/imageThree.jpg"
     },
     {
       imageName: "Stars",
       artistName: "Rodrigo Zuniga",
-      imageSource: "../assets/images/imageFour.jpg"
+      imageSource: "assets/images/imageFour.jpg"
     }
   ];
 
@@ -88,5 +88,8 @@ export class OriginalsPageComponent implements OnInit {
   }
 
   // NOTE: One Click tooltip note
+  setBackgroundImage (imagePath) {
+    // return 'background-image: url(' + imagePath + ');';
+  }
 
 }

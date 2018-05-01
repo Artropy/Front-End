@@ -12,7 +12,7 @@
 
 .mat-card{
     padding: 0px 0px 0px 0px !important;
-    height:100%;
+    height:300px; // Shouldnt need? Display grid row height not fixing 
     display:grid;
     grid-template-areas: "original-image"
     "original-info";
@@ -21,17 +21,18 @@
 }
 
 .original-card{
-    object-fit: cover !important;
     height:100%;
     width:100%;
 }
 
 .original-card:hover { 
     transform: scale(1.01); 
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    //cursor: pointer;
 }
 
 .mat-card-content{
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-image: url('assets/images/imageOne.jpg');
     background-size: cover;
 }
 

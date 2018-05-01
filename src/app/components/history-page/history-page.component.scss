@@ -11,3 +11,22 @@
   align-items: stretch;
   padding-top:40px;
 }
+
+
+
+.history-header{
+  display:grid;
+  // grid-template-rows: 100%;
+  grid-template-areas: "history-type history-clear";
+  grid-template-columns: 50% 50%;
+}
+
+.history-type{
+  grid-area:history-type;
+  justify-self:start;
+}
+
+.history-clear{
+  grid-area: history-clear;
+  justify-self: end;
+}

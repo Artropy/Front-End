@@ -1,3 +1,38 @@
-<p>
-  dashboard-page works!
-</p>
+<div class="dashboard-page">
+  <div class="dashboard-navagation-header">
+    <button mat-raised-button aria-pressed="false" routerLink="uploads">
+      Uploads
+    </button>
+    <button mat-raised-button aria-pressed="false" routerLink="studios">
+      Studios
+    </button>
+    <button mat-raised-button aria-pressed="false" routerLink="analytics">
+      Analytics
+    </button>
+    <button mat-raised-button aria-pressed="false" routerLink="monetization">
+      Monetization
+    </button>
+    <button mat-raised-button aria-pressed="false" routerLink="about">
+      About
+    </button>
+    <hr>
+  </div>
+  <div class="dashboard-general-analytics-card">
+    <mat-card>
+        <mat-card-subtitle>	General Progress</mat-card-subtitle>	
+      <mat-card-content class="original-image">
+        Total Views:
+        <span></span>
+        Total Likes:
+        <span></span>
+        Total Sponsers:
+        <span></span>
+        Total Uploads:
+        <span></span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="dashboard-main-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

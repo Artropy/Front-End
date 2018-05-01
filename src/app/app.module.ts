@@ -10,6 +10,8 @@ import { MockBackend } from '@angular/http/testing'; // <-- for dev enviroment o
 import { BaseRequestOptions, Http } from '@angular/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { Ng2GoogleChartsModule } from 'ng2-google-charts';
+
 
 
 
@@ -33,6 +35,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -92,7 +97,21 @@ import { GenresPageComponent } from './components/genres-page/genres-page.compon
 import { ArtropyCarouselComponent } from './components/artropy-carousel/artropy-carousel.component';
 import { DashboardPageComponent } from './components/dashboard-page/dashboard-page.component';
 import { ExplorePageComponent } from './components/explore-page/explore-page.component';
+import { FeedFollowingPageComponent } from './components/feed-following-page/feed-following-page.component';
 import { AuthGuard } from './auth/guards/auth.guard';
+import { TrendingTodayComponent } from './components/trending-today/trending-today.component';
+import { TrendingWeekComponent } from './components/trending-week/trending-week.component';
+import { TrendingMonthComponent } from './components/trending-month/trending-month.component';
+import { DashboardAnalyticsComponent } from './components/dashboard-analytics/dashboard-analytics.component';
+import { DashboardMonetizationComponent } from './components/dashboard-monetization/dashboard-monetization.component';
+import { DashboardAboutComponent } from './components/dashboard-about/dashboard-about.component';
+import { DashboardUploadsComponent } from './components/dashboard-uploads/dashboard-uploads.component';
+import { DashboardStudiosComponent } from './components/dashboard-studios/dashboard-studios.component';
+import { HistoryArtworkComponent } from './components/history-artwork/history-artwork.component';
+import { HistorySearchComponent } from './components/history-search/history-search.component';
+import { HistoryDonationsComponent } from './components/history-donations/history-donations.component';
+import { HistoryPurchasesComponent } from './components/history-purchases/history-purchases.component';
+import { HistoryCommentsComponent } from './components/history-comments/history-comments.component';
 
 
 
@@ -101,18 +120,24 @@ const appRoutes: Routes = [
   { path: 'home', component: ArtropyHomePageComponent },
   { path: 'originals', component: OriginalsPageComponent },
   { path: 'studios', component: StudiosPageComponent },
-  { path: 'trending', component: TrendingPageComponent },
+  {
+    path: 'trending', component: TrendingPageComponent,
+    children: [
+      { path: 'today', component: TrendingTodayComponent },
+      { path: 'week', component: TrendingWeekComponent },
+      { path: 'month', component: TrendingMonthComponent }]
+  },
   { path: 'masterworks', component: MasterworksPageComponent },
   { path: 'shop', component: ShopPageComponent },
   { path: 'liked', component: LikedPageComponent },
   {
     path: 'history', component: HistoryPageComponent,
     children: [
-      { path: 'history/search', component: HistoryPageComponent },
-      { path: 'history/artists', component: HistoryPageComponent },
-      { path: 'history/images', component: HistoryPageComponent },
-      { path: 'history/donations', component: HistoryPageComponent },
-      { path: 'history/purchases', component: HistoryPageComponent }]
+      { path: 'search', component: HistorySearchComponent },
+      { path: 'artwork', component: HistoryArtworkComponent },
+      { path: 'comments', component: HistoryCommentsComponent },
+      { path: 'donations', component: HistoryDonationsComponent },
+      { path: 'purchases', component: HistoryPurchasesComponent }]
   },
   { path: 'following', component: FollowingPageComponent },
   { path: 'reimaginations', component: ReimaginationsPageComponent },
@@ -124,14 +149,24 @@ const appRoutes: Routes = [
   {
     path: 'feed', component: FeedPageComponent,
     children: [
-      { path: 'explore', component: ExplorePageComponent }]
+      { path: 'following', component: FeedFollowingPageComponent },
+      { path: 'explore', component: ExplorePageComponent },
+    ]
   },
   { path: 'followed', component: FollowedPageComponent },
   { path: 'followers', component: FollowedPageComponent },
   { path: 'search', component: SearchPageComponent },
   { path: 'upload', component: UploadPageComponent },
   { path: 'genres', component: GenresPageComponent },
-  { path: 'dashboard', component: DashboardPageComponent },
+  {
+    path: 'dashboard', component: DashboardPageComponent, children: [
+      { path: 'analytics', component: DashboardAnalyticsComponent },
+      { path: 'monetization', component: DashboardMonetizationComponent },
+      { path: 'uploads', component: DashboardUploadsComponent },
+      { path: 'about', component: DashboardAboutComponent },
+      { path: 'studios', component: DashboardStudiosComponent }
+    ]
+  },
   { path: 'image/:artist/:imageName', component: ImagePageComponent },
   { path: 'image/:artist', component: ArtistPageComponent },
   { path: '**', component: Http404PageComponent },
@@ -173,6 +208,20 @@ const appRoutes: Routes = [
     ArtropyCarouselComponent,
     DashboardPageComponent,
     ExplorePageComponent,
+    FeedFollowingPageComponent,
+    TrendingTodayComponent,
+    TrendingWeekComponent,
+    TrendingMonthComponent,
+    DashboardAnalyticsComponent,
+    DashboardMonetizationComponent,
+    DashboardAboutComponent,
+    DashboardUploadsComponent,
+    DashboardStudiosComponent,
+    HistoryArtworkComponent,
+    HistorySearchComponent,
+    HistoryDonationsComponent,
+    HistoryPurchasesComponent,
+    HistoryCommentsComponent,
   ],
   imports: [
     BrowserModule,
@@ -203,6 +252,9 @@ const appRoutes: Routes = [
     NgxCarouselModule,
     MatTableModule,
     MatProgressSpinnerModule,
+    MatDialogModule,
+    MatButtonToggleModule,
+    Ng2GoogleChartsModule,
     environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
   providers: [

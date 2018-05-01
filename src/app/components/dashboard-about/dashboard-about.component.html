@@ -1,0 +1,40 @@
+<div class="dashboard-about-section">
+  <div class="basic-info">
+    <mat-card class="dashboard-about-card">
+        <mat-card-subtitle>Basic Info	</mat-card-subtitle>
+      <div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="Pen Name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select placeholder="Country">
+            <mat-option value="option">Country</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-card>
+  </div>
+  <div class="tag-chips">
+    <mat-card class="dashboard-about-card">
+        <mat-card-subtitle>Adding the relavent tags helps your audience find you!	</mat-card-subtitle>
+      <mat-form-field class="demo-chip-list">
+        <mat-chip-list #chipList>
+          <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable" [removable]="removable" (remove)="remove(fruit)">
+            {{fruit.name}}
+            <!-- <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon> -->
+          </mat-chip>
+          <input placeholder="New Tag..." [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+            (matChipInputTokenEnd)="add($event)" />
+        </mat-chip-list>
+      </mat-form-field>
+    </mat-card>
+  </div>
+  <div class="about-me-description">
+    <mat-card class="dashboard-about-card">
+        <mat-card-subtitle>Let people know who you are!</mat-card-subtitle>
+      <mat-form-field>
+        <textarea matInput placeholder="About Me" class="about-me-text"></textarea>
+      </mat-form-field>
+    </mat-card>
+  </div>
+</div>

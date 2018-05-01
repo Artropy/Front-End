@@ -17,7 +17,6 @@
 }
 
 .logo{
-  color:white;
   font-size:16px;
   margin: 5px;
 }
@@ -158,4 +157,29 @@ button:focus {outline:0;}
 button > img {
     float:right;
     vertical-align:middle;
+}
+
+svg {
+  color:white;
+}
+
+@media only screen and (max-width: 600px) {
+  .mat-toolbar{
+    background-color:$artropy-primary-color;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:50px;
+    z-index:100;
+    left: 0;
+  }
+
+  .dashboard-button{
+    display:none;
+  }
+
+  .upload-button{
+    display:none;
+  }
 }

@@ -1,11 +1,18 @@
-<div>
-    <button class='artwork-filter' mat-raised-button routerLinkActive="active" routerLink="/today">Today</button>
-    <button class='artist-filter' mat-raised-button  routerLinkActive="active" routerLink="/week">Week</button>
-    <button mat-raised-button routerLink="/month">Month</button>
-    <button mat-raised-button routerLink="/views">Views</button>
-    <button mat-raised-button routerLink="/likes">Likes</button>
+<div class="trending-page">
+    <div class="trending-header">
+        <div class="trending-interval-filter">
+            <button class='artwork-filter' mat-raised-button routerLinkActive="active" routerLink="today">Today</button>
+            <button class='artist-filter' mat-raised-button routerLinkActive="active" routerLink="week">Week</button>
+            <button mat-raised-button routerLink="month">Month</button>
+        </div>
+        <div class="trending-analytic-filter">
+            <button mat-raised-button>Views</button>
+            <button mat-raised-button>Likes</button>
+            <button mat-raised-button>Downloads</button>
+        </div>
+    </div>
 </div>
 <hr class='artropy-hr'>
-<div class="trending-page">
+<div class="trending-main-content">
     <router-outlet></router-outlet>
 </div>

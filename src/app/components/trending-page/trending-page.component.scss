@@ -2,3 +2,21 @@
     display:grid;
 
 }
+
+.trending-header{
+    display:grid;
+    // grid-template-rows: 100%;
+    grid-template-areas: "trending-interval-filter trending-analytic-filter";
+    grid-template-columns: 50% 50%;
+}
+
+
+.trending-analytic-filter{
+    grid-area:trending-interval-filter;
+    justify-self:start;
+}
+
+.trending-analytic-filter{
+    grid-area: trending-analytic-filter;
+    justify-self: end;
+}

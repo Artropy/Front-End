@@ -1,0 +1,36 @@
+.dashboard-about-section{
+    display:grid;
+    grid-template-areas: "basic-info tag-chips"
+    "about-me-description about-me-description";
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+}
+
+.demo-chip-list {
+    width: 100%;
+  }
+
+  .basic-info{
+      grid-area:basic-info;
+  }
+
+  .tag-chips{
+      grid-area:tag-chips;
+  }
+
+  .about-me-description{
+    grid-area:about-me-description;
+  }
+
+  .dashboard-about-card{
+      width:100%;
+      height:100%;
+  }
+
+  .about-me-text{
+      width:100%;
+      height:100%;
+  }

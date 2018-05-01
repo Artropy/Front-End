@@ -1,0 +1,67 @@
+@import '../../../assets/responsive-theme/artropy-main-theme.scss';
+
+hr.artropy-hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $artropy-primary-color, rgba(0, 0, 0, 0));
+}
+
+.feed-page{
+    display:grid;
+    justify-content: stretch;	
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 400px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    align-items: stretch;
+    grid-template-areas: "feed-content feed-advertisment";
+}
+
+.feed-content{
+    grid-area: feed-content;
+}
+
+
+.feed-post{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    margin:15px;
+}
+
+.feed-advertisment{
+    display:grid;
+    grid-area: feed-advertisment;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "feed-advertisment-description"
+    "feed-advertisment-sponser"
+    "feed-advertisment-related";
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+
+}
+
+.feed-advertisment-description{
+    grid-area: feed-advertisment-description;
+
+}
+
+.feed-advertisment-sponser{
+    grid-area: feed-advertisment-sponser;
+}
+
+.feed-advertisment-related{
+    grid-area: feed-advertisment-related;
+}
+
+.feed-card{
+    height:100%;
+}
+
+.reimagination-image{
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}

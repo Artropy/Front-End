@@ -1,4 +1,8 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, OnDestroy , Inject} from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+
 
 @Component({
   selector: 'app-history-page',
@@ -7,7 +11,6 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HistoryPageComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {

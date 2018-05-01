@@ -25,11 +25,9 @@ button:focus {outline:none; }
   grid-template-rows: 150px 1000px auto;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  grid-template-areas: "header tags"
+  grid-template-areas: "image tags"
   "image relatedImages"
-  "discussion relatedImages";
-  padding: 0px;
-
+  "image-page-disscusion relatedImages";
 }
 
 .image-page-tags{
@@ -45,7 +43,7 @@ button:focus {outline:none; }
 }
 
 .image-page-disscusion{
-  grid-area: discussion;
+  grid-area: image-page-disscusion;
   height:100%;
   width:100%;
 }
@@ -57,19 +55,21 @@ button:focus {outline:none; }
 }
 
 .image-page-related{
+  display:grid;
+  grid-template-rows: 100%;;
   grid-area: relatedImages;
   height:100%;
   width:100%;
 }
 
-.mat-card{
+.image-page-card{
   height:100%;
   padding:0px;
 }
 
 
 .mat-card-content{
-  margin:5px;
+  margin:0px;
 }
 .image-card{
   max-height:100%;
@@ -120,4 +120,14 @@ button:focus {outline:none; }
   // display: block;
   // margin-left: auto;
   // margin-right: auto;
+}
+
+// .main-image{
+//   background-image: url('assets/images/imageOne.jpg');
+//   background-size: cover;
+// }
+
+.related-image-card{
+  // height:200px;
+  // width:100%;
 }

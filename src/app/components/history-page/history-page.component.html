@@ -1,20 +1,16 @@
 <div class='history-header'>
-    <button class='artwork-filter' mat-raised-button routerLink="artwork" routerLinkActive="active">Artwork</button>
-    <button class='artist-filter' mat-raised-button routerLink="artists" routerLinkActive="active">Artists</button>
-    <button mat-raised-button routerLink="search">Search History</button>
-    <button mat-raised-button routerLink="donation">Donations</button>
-    <button mat-raised-button routerLink="purchases">Purchases</button>
-    <button mat-raised-button routerLink="comments">Comments</button>
+    <div class="history-type">
+        <button class='artwork-filter' mat-raised-button routerLink="artwork" routerLinkActive="active">Artwork</button>
+        <button mat-raised-button routerLink="search">Search History</button>
+        <button mat-raised-button routerLink="donations">Donations</button>
+        <button mat-raised-button routerLink="purchases">Purchases</button>
+        <button mat-raised-button routerLink="comments">Comments</button>
+    </div>
+    <div class="history-clear">
+        <button mat-raised-button color="warn">Clear History</button>
+    </div>
 </div>
 <hr class='artropy-hr'>
-<div class='history-options-container'>
-    <button mat-raised-button color="warn">Clear History</button>
-    <mat-form-field class="example-full-width">
-        <input matInput placeholder="Search" value="">
-        <mat-icon matSuffix></mat-icon>
-    </mat-form-field>
-</div>
-<router-outlet></router-outlet>
 <div class='history-page'>
-    <mat-card class="history-card"></mat-card>
+    <router-outlet></router-outlet>
 </div>

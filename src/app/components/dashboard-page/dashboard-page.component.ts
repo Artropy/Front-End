@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, Resolve, RouterStateSnapshot,
+  ActivatedRouteSnapshot } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard-page',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardPageComponent implements OnInit {
 
-  constructor() { }
+  onNavigateTo() {
+    console.log('test');
+    this.router.navigate(['login']);
+  }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
 }
