@@ -123,6 +123,7 @@ const appRoutes: Routes = [
   {
     path: 'trending', component: TrendingPageComponent,
     children: [
+      { path: '', component: TrendingTodayComponent },
       { path: 'today', component: TrendingTodayComponent },
       { path: 'week', component: TrendingWeekComponent },
       { path: 'month', component: TrendingMonthComponent }]
@@ -133,6 +134,7 @@ const appRoutes: Routes = [
   {
     path: 'history', component: HistoryPageComponent,
     children: [
+      { path: '', component: HistoryArtworkComponent },
       { path: 'search', component: HistorySearchComponent },
       { path: 'artwork', component: HistoryArtworkComponent },
       { path: 'comments', component: HistoryCommentsComponent },
@@ -149,6 +151,7 @@ const appRoutes: Routes = [
   {
     path: 'feed', component: FeedPageComponent,
     children: [
+      { path: '', component: FeedFollowingPageComponent },
       { path: 'following', component: FeedFollowingPageComponent },
       { path: 'explore', component: ExplorePageComponent },
     ]
@@ -160,6 +163,7 @@ const appRoutes: Routes = [
   { path: 'genres', component: GenresPageComponent },
   {
     path: 'dashboard', component: DashboardPageComponent, children: [
+      { path: '', component: DashboardUploadsComponent },
       { path: 'analytics', component: DashboardAnalyticsComponent },
       { path: 'monetization', component: DashboardMonetizationComponent },
       { path: 'uploads', component: DashboardUploadsComponent },
